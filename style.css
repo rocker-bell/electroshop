@@ -26,18 +26,24 @@ ul {
   list-style: none;
 }
 
+
 a {
+  color:  #fff;
   text-decoration: none;
-  color: white;
 }
 
-a:hover {
-  color: #333;
+.icons:hover {
+  color: #fff;
 }
+
 
 /* HEADER  */
 .navbar-dark {
   background-color: #333;
+}
+
+.nav-link{
+color: #333; 
 }
 
 .bottom-header {
@@ -45,6 +51,8 @@ a:hover {
 }
 
 .icons {
+  color: #fff;
+  text-decoration: none;
   padding: 0 5px;
   margin-right: 2px;
 }
