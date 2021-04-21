@@ -35,6 +35,10 @@ a:hover {
   color: #333;
 }
 
+/* HEADER  */
+.navbar-dark {
+  background-color: #333;
+}
 /*
     ==============================================
                 ****** GLOBAL ******
