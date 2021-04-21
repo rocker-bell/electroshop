@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='icon' href="#">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>electroshop</title>
 </head>
@@ -23,49 +23,40 @@
       </button>
     
       <div class="collapse navbar-collapse navbarToggler">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"> <i class="fas fa-home"></i>Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-th-large"></i>COLLECTIONS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#"><i class="fas fa-cart-plus"></i>PURCHASE LIST</a>
-          </li>
-          <li>
-            <button>POST an AD</button>
-          </li>
-        </ul>
-      
-        <div class="d-none d-lg-flex">
-          <a href=""><i class="far fa-envelope"></i></a>
-          <a href="">Admin</a>
-          <a href=""><i class="fas fa-user-circle"></i></a>
+        
+        <a class="nav-link active" href="#"> <i class="fas fa-home"></i>Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link active" href="#"><i class="fas fa-th-large"></i>COLLECTIONS</a>
+        <a class="nav-link disabled" href="#"><i class="fas fa-cart-plus"></i>PURCHASE LIST</a>
+        <button type="submit" class="text-white bg-danger btn btn-group">POST an AD</button> </div>
+        
+        <div class="d-none d-lg-flex highlights">
+          <a href="" class="icons"><i class="far fa-envelope"></i></a>
+          <a href="" class="icons">Admin</a>
+          <a href="" class="icons"><i class="fas fa-user-circle"></i></a>
         </div>
       </div>
     </nav>
   </div>
 
-  <div class="bottom-header">
-    <div class="captions">
+  <div class="bottom-header text-white p-2">
+    <div class="captions text-center">
       <h1>Electro Shop</h1>
       <h2>Buying And Selling couldn't be simpler than this</h2>
     </div>
     
-    <div class="search-section">
-      <form action="">
-        <div>
-          <div>
-            <select name="options" >
+    <div class="search-section my-5 justify-content-center">
+      <form action="search.html">
+        <div class="container form">
+          <div class="d-flex justify-content-center">
+            <select class="form-select rounded-0 w-50 border-danger" aria-label="Default select example">
               <option selected>ALL CATEGORIES</option>
               <option value="1">COLLECTIONS</option>
               <option value="2">SPEAKERS</option>
               <option value="2">ACCESSORIES</option>
             </select>
-            <input type="text" name="product" placeholder="Product">
-            <input type="text" name="LOCATION" placeholder="Location">
-            <button type="submit">SEARCH</button>
+            <input type="text" class="form-control form-input rounded-0 w-75 border-danger" placeholder="Product">
+            <input type="text" class="form-control form-input rounded-0 w-75 border-danger" placeholder="Location">
+            <button type="submit" class="ml-4 btn btn-submit-search rounded-0 border-0 bg-dark text-secondary">SEARCH</button>
           </div>
         </div>
       </form>
@@ -73,6 +64,61 @@
 
   </div>
   </header>
+
+
+  <main>
+    <div class="container">
+      <div class="top-seller">
+        <a href="">TOP SELLER THIS WEEK/a>
+        <div>
+          <div >
+            <a href="" class="arrow"><i class="fas fa-arrow-left"></i></a>
+          </div>
+
+          <div class="top-pick-img">
+            <img class="img-ad" src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg" alt="">
+          </div>
+
+          <div class="top-pick-details">
+            <h1>Bluetooth Speaker One</h1>
+            <p class="hot-product">New</p>
+            <ul class="list-group">
+              <li>Color: black</li>
+              <li>Brand: Sony</li>
+              <li>Frequency: 5.0</li>
+            </ul>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <div class="btn-group dropUp">
+              <button type="button" class="btn rounded-0" data-toggle="dropdown" aria-expanded="false">
+                <i class="far fa-plus-square"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                <li><hr class="dropdown-divider border-danger"></li>
+                <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
+                <li><hr class="dropdown-divider border-danger"></li>
+                <li><a class="dropdown-item" href="#">More Details</a></li>
+              </ul>
+            </div>
+            <button type="submit" disabled>$499.0</button>
+          </div>
+        </div>
+
+        <div >
+          <a href="" class="arrow">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    
+  </main>
   
 </body>
 
