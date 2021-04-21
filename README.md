@@ -1,59 +1,35 @@
-![](https://img.shields.io/badge/myapp-blueviolet)
+# Electronic shop
 
-# Project Name
+> This is an electronic shop project.
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
+![screenshot]()
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- BOOTSTRAP
+- coffee
 
 ## Live Demo
 
 [Live Demo Link](https://livedemo.com)
 
+## Authors
+
+👤 **Anass**
+
+- Twitter: [@twitterhandle](https://twitter.com/AnassTantane)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anass-tantane-706172194/)
+- GitHub: [@githubhandle](https://github.com/rockerbell)
 
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Shaher**
-
-- Twitter: [@twitterhandle](https://twitter.com/ShaherShamroukh/)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shaher-shamroukh/)
-- GitHub: [@githubhandle](https://github.com/Shaher-11/)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
 
 ## 🤝 Contributing
 
