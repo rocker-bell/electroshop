@@ -67,12 +67,23 @@ main {
 }
 
 section {
-  width: 60%;
-  height: 10%;
+  width: 100%;
+}
+
+.section-header {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #fff;
+  justify-content: space-between;
+}
+
+.section-header a {
+  padding: 0 5px;
 }
 
 .container section {
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 180px;
 }
 
 .prod-img {
@@ -84,21 +95,20 @@ section {
   width: 100%;
 }
 
-.section {
-  width: 100%;
-}
-
 .card {
+  padding: 0 5px;
   margin-bottom: 30px;
+  align-content: center;
   justify-content: center;
-  width: 70%;
+  width: 100%;
   height: 35%;
 }
 
-.block {
-  width: 70%;
-  height: 35%;
-}
+
+
+
+/* ---footer--- */
+
 
 /*
     ==============================================
