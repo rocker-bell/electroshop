@@ -2,7 +2,7 @@
 
 > This is an electronic shop project.
 
-![screenshot]()
+![screenshot](Images/Screenshot.png)
 
 Additional description about the project and its features.
 
@@ -22,7 +22,7 @@ Additional description about the project and its features.
 👤 **Anass**
 
 - Twitter: [@twitterhandle](https://twitter.com/AnassTantane)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anass-tantane-706172194/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anass-tantane)
 - GitHub: [@githubhandle](https://github.com/rockerbell)
 
 ## Getting Started
