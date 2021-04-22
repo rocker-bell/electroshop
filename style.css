@@ -68,6 +68,7 @@ main {
 
 section {
   width: 100%;
+  background-color: #ccc;
 }
 
 .section-header {
@@ -78,6 +79,8 @@ section {
 }
 
 .section-header a {
+  color: #444;
+  text-decoration: none;
   padding: 0 5px;
 }
 
@@ -96,7 +99,7 @@ section {
 }
 
 .card {
-  padding: 0 5px;
+  padding: 5px 5px;
   margin-bottom: 30px;
   align-content: center;
   justify-content: center;
