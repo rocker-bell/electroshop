@@ -43,35 +43,53 @@
     </nav>
     </div>
 
-  <div class="bottom-header d-none text-white p-2 ">
-    <div class="captions text-center">
-      <h1>Electro Shop</h1>
-      <h2>Buying And Selling couldn't be simpler than this</h2>
-    </div>
-    
-    <div class="search-section my-5 justify-content-center">
-      <form action="search.html">
-        <div class="container form">
-          <div class="d-flex justify-content-center">
-            <select class="form-select rounded-0 w-50 border-danger" aria-label="Default select example">
-              <option selected>ALL CATEGORIES</option>
-              <option value="1">COLLECTIONS</option>
-              <option value="2">SPEAKERS</option>
-              <option value="2">ACCESSORIES</option>
-            </select>
-            <input type="text" class="form-control form-input rounded-0 w-75 border-danger" placeholder="Product">
-            <input type="text" class="form-control form-input rounded-0 w-75 border-danger" placeholder="Location">
-            <button type="submit" class="ml-4 btn btn-submit-search rounded-0 border-0 bg-dark text-secondary">SEARCH</button>
+    <div class="bottom-header-container">
+        <div class="bottom-header text-white p-2 bg-danger">
+          <div class="captions text-center">
+            <h1>Electro Shop</h1>
+            <h2>Buying And Selling couldn't be simpler than this</h2>
+          </div>
+  
+          <div class="search-section my-5 justify-content-center">
+            <form action="search.html">
+              <div class="container form">
+                <div class="d-flex justify-content-center">
+                  <select
+                    class="form-select rounded-0 w-50 border-danger"
+                    aria-label="Default select example"
+                  >
+                    <option selected>ALL CATEGORIES</option>
+                    <option value="1">COLLECTIONS</option>
+                    <option value="2">SPEAKERS</option>
+                    <option value="2">ACCESSORIES</option>
+                  </select>
+                  <input
+                    type="text"
+                    class="form-control form-input rounded-0 w-75 border-danger"
+                    placeholder="Product"
+                  />
+                  <input
+                    type="text"
+                    class="form-control form-input rounded-0 w-75 border-danger"
+                    placeholder="Location"
+                  />
+                  <button
+                    type="submit"
+                    class="ml-4 btn btn-submit-search rounded-0 border-0 bg-dark text-secondary"
+                  >
+                    SEARCH
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-      </form>
-    </div>
-
-  </div>
+      </div>
   </header>
 
 <main>
-    <section class="section-1 radio-block d-flex flex-column container-fluid float-left">
+
+    <div class="section-1-container radio-block  container-fluid float-left">
         <div class="product-status d-flex pt-2">
             <div class="brand-new checkbox-inline d-flex border-bottom p-2">
                 <input type="checkbox" name="brand-new" id="">
@@ -149,22 +167,22 @@
             </div>
         </div>
 
-    </section>
+    </div>
     <section class="d-flex flex-column justify-content-center section-2 border-0 container-fluid">
         <div class="content-header border-bottom text-dark p-2">
             <p>138 Results for <strong> "Speaker"</strong>  Search at <strong>"Nairobi"</strong>  in Category <strong>"Speaker"</strong> </p>
         </div>
         <div class="product-cards d-flex flex-column pt-2 mt-2">
-            <div class="card d-flex container-fluid shadow p-2">
-                <div class="product-image">
+            <div class="card d-flex container-fluid shadow p-2 mx-auto">
+                <div class="product-image container-fluid">
                     <img class="prod-img" src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg" alt="bt-speaker">
                 </div>
                 <div class="product-infos d-flex flex-column">
                     <div class="product-name text-dark">
-                        <p>Bluetooth Speaker One</p>
+                        <p class="font-weight-bold">Bluetooth Speaker One</p>
                     </div>
                     <div class="product-state ">
-                        <p class="text-warning">New</p>
+                        <p class="text-danger">New</p>
                     </div>
                     <div class="product-about">
                         <p class="text-secondary">
@@ -176,11 +194,171 @@
                     </div>
                     <div class="product-price d-flex justify-content-around">
                         <div class="date">
-                            <p class="text-secondary">23 April 2021</p>
+                            <p class="text-secondary font-weight-bold">23 April 2021</p>
                         </div>
                         <div class="col-6 text-right pt-3">
                             <div class="btn-group dropup">
-                                <button type="button" class="text-white btn btn-post-ad rounded-0 border-0 btn-sm" data-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="text-dark btn btn-post-ad rounded-0 border-0 btn-sm bg-danger mb-4" data-toggle="dropdown" aria-expanded="false">
+                                    $499
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                                    <li><hr class="dropdown-divider border-danger"></li>
+                                    <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
+                                    <li><hr class="dropdown-divider border-danger"></li>
+                                    <li><a class="dropdown-item" href="#">More Details</a></li>
+                                </ul>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card d-flex container-fluid shadow p-2 mx-auto">
+                <div class="product-image container-fluid">
+                    <img class="prod-img" src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg" alt="bt-speaker">
+                </div>
+                <div class="product-infos d-flex flex-column">
+                    <div class="product-name text-dark">
+                        <p class="font-weight-bold">Bluetooth Speaker One</p>
+                    </div>
+                    <div class="product-state ">
+                        <p class="text-danger">New</p>
+                    </div>
+                    <div class="product-about">
+                        <p class="text-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure adipisci ex suscipit voluptas facilis, rem aliquid sed eaque nemo sunt commodi animi magnam sit libero! Aut quae ex tenetur?
+                        </p>
+                    </div>
+                    <div class="product-location">
+                        <p class="font-weight-bold">Location: Nairobi</p>
+                    </div>
+                    <div class="product-price d-flex justify-content-around">
+                        <div class="date">
+                            <p class="text-secondary font-weight-bold">23 April 2021</p>
+                        </div>
+                        <div class="col-6 text-right pt-3">
+                            <div class="btn-group dropup">
+                                <button type="button" class="text-dark btn btn-post-ad rounded-0 border-0 btn-sm bg-danger mb-4" data-toggle="dropdown" aria-expanded="false">
+                                    $499
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                                    <li><hr class="dropdown-divider border-danger"></li>
+                                    <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
+                                    <li><hr class="dropdown-divider border-danger"></li>
+                                    <li><a class="dropdown-item" href="#">More Details</a></li>
+                                </ul>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card d-flex container-fluid shadow p-2 mx-auto">
+                <div class="product-image container-fluid">
+                    <img class="prod-img" src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg" alt="bt-speaker">
+                </div>
+                <div class="product-infos d-flex flex-column">
+                    <div class="product-name text-dark">
+                        <p class="font-weight-bold">Bluetooth Speaker One</p>
+                    </div>
+                    <div class="product-state ">
+                        <p class="text-danger">New</p>
+                    </div>
+                    <div class="product-about">
+                        <p class="text-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure adipisci ex suscipit voluptas facilis, rem aliquid sed eaque nemo sunt commodi animi magnam sit libero! Aut quae ex tenetur?
+                        </p>
+                    </div>
+                    <div class="product-location">
+                        <p class="font-weight-bold">Location: Nairobi</p>
+                    </div>
+                    <div class="product-price d-flex justify-content-around">
+                        <div class="date">
+                            <p class="text-secondary font-weight-bold">23 April 2021</p>
+                        </div>
+                        <div class="col-6 text-right pt-3">
+                            <div class="btn-group dropup">
+                                <button type="button" class="text-dark btn btn-post-ad rounded-0 border-0 btn-sm bg-danger mb-4" data-toggle="dropdown" aria-expanded="false">
+                                    $499
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                                    <li><hr class="dropdown-divider border-danger"></li>
+                                    <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
+                                    <li><hr class="dropdown-divider border-danger"></li>
+                                    <li><a class="dropdown-item" href="#">More Details</a></li>
+                                </ul>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card d-flex container-fluid shadow p-2 mx-auto">
+                <div class="product-image container-fluid">
+                    <img class="prod-img" src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg" alt="bt-speaker">
+                </div>
+                <div class="product-infos d-flex flex-column">
+                    <div class="product-name text-dark">
+                        <p class="font-weight-bold">Bluetooth Speaker One</p>
+                    </div>
+                    <div class="product-state ">
+                        <p class="text-danger">New</p>
+                    </div>
+                    <div class="product-about">
+                        <p class="text-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure adipisci ex suscipit voluptas facilis, rem aliquid sed eaque nemo sunt commodi animi magnam sit libero! Aut quae ex tenetur?
+                        </p>
+                    </div>
+                    <div class="product-location">
+                        <p class="font-weight-bold">Location: Nairobi</p>
+                    </div>
+                    <div class="product-price d-flex justify-content-around">
+                        <div class="date">
+                            <p class="text-secondary font-weight-bold">23 April 2021</p>
+                        </div>
+                        <div class="col-6 text-right pt-3">
+                            <div class="btn-group dropup">
+                                <button type="button" class="text-dark btn btn-post-ad rounded-0 border-0 btn-sm bg-danger mb-4" data-toggle="dropdown" aria-expanded="false">
+                                    $499
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-item" href="#">Add to Collection</a></li>
+                                    <li><hr class="dropdown-divider border-danger"></li>
+                                    <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
+                                    <li><hr class="dropdown-divider border-danger"></li>
+                                    <li><a class="dropdown-item" href="#">More Details</a></li>
+                                </ul>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card d-flex container-fluid shadow p-2 mx-auto">
+                <div class="product-image container-fluid">
+                    <img class="prod-img" src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg" alt="bt-speaker">
+                </div>
+                <div class="product-infos d-flex flex-column">
+                    <div class="product-name text-dark">
+                        <p class="font-weight-bold">Bluetooth Speaker One</p>
+                    </div>
+                    <div class="product-state ">
+                        <p class="text-danger">New</p>
+                    </div>
+                    <div class="product-about">
+                        <p class="text-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure adipisci ex suscipit voluptas facilis, rem aliquid sed eaque nemo sunt commodi animi magnam sit libero! Aut quae ex tenetur?
+                        </p>
+                    </div>
+                    <div class="product-location">
+                        <p class="font-weight-bold">Location: Nairobi</p>
+                    </div>
+                    <div class="product-price d-flex justify-content-around">
+                        <div class="date">
+                            <p class="text-secondary font-weight-bold">23 April 2021</p>
+                        </div>
+                        <div class="col-6 text-right pt-3">
+                            <div class="btn-group dropup">
+                                <button type="button" class="text-dark btn btn-post-ad rounded-0 border-0 btn-sm bg-danger mb-4" data-toggle="dropdown" aria-expanded="false">
                                     $499
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-right">
@@ -197,15 +375,25 @@
             </div>
         </div>
     </section>
+
+    
 </main>
 
+<nav class="pagination mx-auto my-4 ">
+    <ul class="justify-content-center links">
+        <li><a href="#" class="pagelinks text-secondary">Previous</a></li>
+        <li><a href="#" class="pagelinks">1</a></li>
+        <li><a href="#" class="pagelinks">2</a></li>
+        <li><a href="#" class="pagelinks">3</a></li>
+        <li><a href="#" class="pagelinks bg-light">Next</a></li>
+    </ul>
+</nav>
 
 
-
-<footer class="d-flex flex-column bg-dark  justify-content-center align-items-center pt-4 mt-4 fixed-bottom">
+<footer class="d-flex flex-column bg-dark  justify-content-center align-items-center pt-4 mt-4">
     <div class="d-flex flex-column align-items-center">
       <a href=""><img src="Images/zattix-logo.png" alt=""></a>
-      <a href="">Electro Shop</a>
+      <a href="" class="text-white">Electro Shop</a>
     </div>
 
     <div class="d-flex flex-row justify-content-center flex-wrap">
