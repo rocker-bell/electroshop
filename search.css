@@ -45,6 +45,10 @@ header {
   color: #333;
 }
 
+.bottom-header {
+  background-color: #d35266;
+}
+
 .icons {
   color: #fff;
   text-decoration: none;
@@ -63,63 +67,18 @@ header {
 /* ---main--- */
 
 main {
+  display: grid;
+  grid-template-columns: 45% 45%;
   width: 100%;
 }
 
 section {
-  background-color: #ccc;
-}
-
-.section-header {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #fff;
-  justify-content: space-between;
-}
-
-.section-header a {
-  color: #444;
-  text-decoration: none;
-  padding: 0 5px;
-}
-
-.container section {
-  margin-top: 20px;
-  margin-bottom: 180px;
-}
-
-.prod-img {
-  width: 100%;
-  height: 35%;
-}
-
-.product-price {
-  width: 100%;
+  background-color: #fff;
 }
 
 .card {
-  padding: 5px 5px;
-  margin-bottom: 30px;
-  align-content: center;
-  justify-content: center;
-  width: 100%;
-  height: 35%;
-}
-
-.btn:hover {
-  transform: scale(1.2);
-}
-
-.footer-top-container {
-  display: none;
-}
-
-.new-hot-product-container {
-  display: none;
-}
-
-.bottom-header-container {
-  display: none;
+    width: 700px;
+    height: 200px;
 }
 
 /* ---footer--- */
@@ -127,12 +86,12 @@ section {
 /* --MEDIAQUERIES-- */
 
 @media screen and (min-width: 768px) {
- 
-
-  .hot-product-container{
+  .section1 {
     display: none;
   }
-
+  .hot-product-container {
+    display: none;
+  }
   .bottom-header {
     display: none;
   }
@@ -154,18 +113,9 @@ section {
 }
 
 @media screen and (min-width: 990px) {
-  .bottom-header-container {
-    display: block;
-  }
-
-  .new-hot-product-container {
-    display: block;
-  }
-
   .hot-product-container {
-    display: flex;
+    display: block;
   }
-
   .bottom-header {
     display: block;
   }
@@ -252,17 +202,8 @@ section {
   }
 
   .highlights {
-    
+    float: right;
   }
-
-  .highlights a {
-    text-decoration: none;
-    color: #888;
-  }
-
- .footer-top-container {
-   display: block;
- }
 
   .footer-top {
     display: flex;
@@ -300,7 +241,7 @@ section {
 }
 
 /*
-    ==============================================
-                ****** GLOBAL ******
-    ==============================================
-*/
+      ==============================================
+                  ****** GLOBAL ******
+      ==============================================
+  */
