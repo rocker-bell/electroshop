@@ -127,9 +127,7 @@ section {
 /* --MEDIAQUERIES-- */
 
 @media screen and (min-width: 768px) {
- 
-
-  .hot-product-container{
+  .hot-product-container {
     display: none;
   }
 
@@ -182,10 +180,6 @@ section {
 
   section {
     margin: 10px;
-  }
-
-  .hot-product-container {
-    margin: 10px auto;
   }
 
   .hot-product {
@@ -252,7 +246,7 @@ section {
   }
 
   .highlights {
-    
+    padding-left: 680px;
   }
 
   .highlights a {
@@ -260,9 +254,9 @@ section {
     color: #888;
   }
 
- .footer-top-container {
-   display: block;
- }
+  .footer-top-container {
+    display: block;
+  }
 
   .footer-top {
     display: flex;

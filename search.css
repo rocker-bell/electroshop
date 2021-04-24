@@ -150,4 +150,27 @@ footer {
     margin-left: 15px;
     color: #fb743e;
   }
+
+  .list-group {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .list-group li {
+      list-style: none;
+      padding: 0 5px;
+  }
+
+  .list-group2 li {
+    list-style: none;
+  }
+
+  .highlights {
+    padding-left: 680px;
+  }
+
+  .icons {
+      color: #888;
+  }
+
 }
