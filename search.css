@@ -15,6 +15,7 @@ header {
   width: 100%;
   position: sticky;
 }
+
 .navbar-dark {
   background-color: #333;
 }
@@ -66,7 +67,6 @@ footer {
 
 .card {
   margin-bottom: 20px;
-  box-shadow: #ccc;
 }
 
 .justify-content-center {
@@ -152,13 +152,13 @@ footer {
   }
 
   .list-group {
-      display: flex;
-      flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   .list-group li {
-      list-style: none;
-      padding: 0 5px;
+    list-style: none;
+    padding: 0 5px;
   }
 
   .list-group2 li {
@@ -170,7 +170,6 @@ footer {
   }
 
   .icons {
-      color: #888;
+    color: #888;
   }
-
 }

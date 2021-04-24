@@ -37,6 +37,7 @@ header {
   width: 100%;
   position: sticky;
 }
+
 .navbar-dark {
   background-color: #333;
 }
@@ -134,6 +135,7 @@ section {
   .bottom-header {
     display: none;
   }
+  
   .products {
     display: grid;
     grid-template-columns: 45% 45%;
