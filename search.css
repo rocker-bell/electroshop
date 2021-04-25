@@ -61,6 +61,22 @@ main {
   background-color: #fcfcfc;
 }
 
+.mobile-search {
+  width: 100%;
+}
+
+.input-search {
+  width: 70%;
+}
+
+.input-location {
+  width: 15%;
+}
+
+.search-button {
+  height: 10%;
+}
+
 footer {
   margin-top: 40px;
   position: static;
@@ -113,6 +129,10 @@ footer {
   main {
     border-bottom: 1px solid #ccc;
     margin: 0 auto;
+  }
+
+  .mobile-search-container {
+    display: none;
   }
 
   label {
