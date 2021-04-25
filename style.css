@@ -123,6 +123,22 @@ section {
 
 /* ---footer--- */
 
+.footer-icons {
+  text-decoration: none;
+  color: #888;
+  padding: 5px 10px;
+}
+
+.footer-icons:hover {
+  color: #fff;
+}
+
+.footer-top-heading,
+.footer-top-icons {
+  
+  color: #d35266;
+}
+
 /* --MEDIAQUERIES-- */
 
 @media screen and (min-width: 768px) {
@@ -282,8 +298,8 @@ section {
     display: grid;
     grid-template-columns: 25% 25%;
     justify-content: space-around;
-    height: 300px;
-    background-color: #ffcb91;
+    height: 250px;
+    background-color: #ece8e8;
   }
 
   .navigation-header {
@@ -291,8 +307,14 @@ section {
   }
 
   .navigation-media a {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
     margin-left: 15px;
-    color: #fb743e;
+  }
+
+  .navigation-media a:hover {
+    color: #d35266;
   }
 }
 

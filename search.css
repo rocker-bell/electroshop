@@ -37,6 +37,18 @@ header {
   font-size: 17px;
 }
 
+/* ---footer--- */
+
+.footer-icons {
+  text-decoration: none;
+  color: #888;
+  padding: 5px 10px;
+}
+
+.footer-icons:hover {
+  color: #fff;
+}
+
 /* --main-- */
 
 main {
