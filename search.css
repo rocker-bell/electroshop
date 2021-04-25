@@ -24,11 +24,9 @@ header {
   color: #333;
 }
 
-.icons {
-  color: #fff;
+.icons a {
   text-decoration: none;
-  padding: 0 5px;
-  margin-right: 2px;
+  color: #888;
 }
 
 .icons:hover {
@@ -161,11 +159,7 @@ footer {
   .list-group2 li {
     list-style: none;
   }
-
-  .highlights {
-    padding-left: 680px;
-  }
-
+  
   .icons {
     color: #888;
   }
