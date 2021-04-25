@@ -49,6 +49,11 @@ header {
   color: #fff;
 }
 
+.section-1-container {
+  border-right: 1px solid #ccc;
+  padding-left: 250px;
+}
+
 /* --main-- */
 
 main {
@@ -102,11 +107,18 @@ footer {
   display: none;
 }
 
-
-
 /* --media-- */
 
 @media screen and (min-width: 990px) {
+  main {
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+  }
+
+  label {
+    margin-left: 5px;
+  }
+
   .bottom-header-container {
     display: block;
   }
@@ -171,7 +183,7 @@ footer {
   .list-group2 li {
     list-style: none;
   }
-  
+
   .icons {
     color: #888;
   }
