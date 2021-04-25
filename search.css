@@ -124,6 +124,8 @@ footer {
   main {
     border-bottom: 1px solid #ccc;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
 
   .mobile-search-container {
@@ -146,11 +148,6 @@ footer {
     border-right: 1px solid #ccc;
     padding-left: 250px;
     display: block;
-  }
-
-  main {
-    display: grid;
-    grid-template-columns: 50% 50%;
   }
 
   .footer-top {
