@@ -1,6 +1,6 @@
 # Electronic shop
 
-> This is an electronic shop project.
+> This is an electronic shop project built individially exploring different techniques and practices of HTML/CSS/Bootsrap.
 
 ![screenshot](Images/Screenshot.png)
 
@@ -15,11 +15,11 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rocker-bell.github.io/electroshop/)
 
 ## Authors
 
-👤 **Anass**
+👤 **Rockebell**
 
 - Twitter: [@twitterhandle](https://twitter.com/AnassTantane)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/anass-tantane)
@@ -28,8 +28,13 @@ Additional description about the project and its features.
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
+To get a local copy of this project follow the steps below:
+Go to https://github.com/rocker-bell/electroshop:
+
+- Fork the project
+- Navigate the project, you can open it with VScode or any other code editor of choice
+- Happy coding!
 
 ## 🤝 Contributing
 
