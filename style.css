@@ -154,6 +154,9 @@ section {
 }
 
 @media screen and (min-width: 990px) {
+  .main {
+    width: 750px;
+  }
   .bottom-header-container {
     display: block;
   }

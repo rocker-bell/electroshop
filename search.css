@@ -97,6 +97,8 @@ footer {
   display: none;
 }
 
+
+
 /* --media-- */
 
 @media screen and (min-width: 990px) {
@@ -113,6 +115,7 @@ footer {
   }
 
   main {
+    
     display: grid;
     grid-template-columns: 50% 50%;
   }
