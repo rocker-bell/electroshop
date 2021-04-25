@@ -49,11 +49,6 @@ header {
   color: #fff;
 }
 
-.section-1-container {
-  border-right: 1px solid #ccc;
-  padding-left: 250px;
-}
-
 /* --main-- */
 
 main {
@@ -148,6 +143,8 @@ footer {
   }
 
   .section-1-container {
+    border-right: 1px solid #ccc;
+    padding-left: 250px;
     display: block;
   }
 
