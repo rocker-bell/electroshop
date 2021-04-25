@@ -48,7 +48,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Thanks to Mohammed Anwar of Behance for the amazing website design that this project is based on.
 - Inspiration
 - etc
 
