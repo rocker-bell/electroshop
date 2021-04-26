@@ -1,0 +1,204 @@
+body {
+  width: 100%;
+}
+
+.bottom-header-container {
+  display: none;
+}
+
+.section-1-container {
+  display: none;
+}
+
+/* HEADER  */
+header {
+  width: 100%;
+  position: sticky;
+}
+
+.navbar-dark {
+  background-color: #333;
+}
+
+.nav-link {
+  color: #333;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #888;
+}
+
+.icons:hover {
+  color: #fff;
+}
+
+.fs-1 {
+  font-size: 17px;
+}
+
+/* ---footer--- */
+
+.footer-icons {
+  text-decoration: none;
+  color: #888;
+  padding: 5px 10px;
+}
+
+.footer-icons:hover {
+  color: #fff;
+}
+
+/* --main-- */
+
+main {
+  width: 100%;
+  background-color: #fcfcfc;
+}
+
+.mobile-search {
+  width: 100%;
+}
+
+.input-search {
+  width: 70%;
+}
+
+.input-location {
+  width: 15%;
+}
+
+.search-button {
+  height: 10%;
+}
+
+footer {
+  margin-top: 40px;
+  position: static;
+}
+
+.product-image {
+  width: 100%;
+  justify-content: center;
+}
+
+.prod-img {
+  width: 300px;
+  height: 200px;
+}
+
+.product-price {
+  align-items: center;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.links li {
+  background-color: #fff;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+}
+
+.pagelinks {
+  text-decoration: none;
+}
+
+.footer-top-container {
+  display: none;
+}
+
+/* --media-- */
+
+@media screen and (min-width: 990px) {
+  main {
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .mobile-search-container {
+    display: none;
+  }
+
+  label {
+    margin-left: 5px;
+  }
+
+  .bottom-header-container {
+    display: block;
+  }
+
+  .footer-top-container {
+    display: block;
+  }
+
+  .section-1-container {
+    border-right: 1px solid #ccc;
+    padding-left: 250px;
+    display: block;
+  }
+
+  .footer-top {
+    display: flex;
+    border-top: 4px solid #f42;
+    margin-top: 20px;
+  }
+
+  .about {
+    margin-top: 30px;
+  }
+
+  .about-header {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #888;
+  }
+
+  .categories-section {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 25% 25%;
+    justify-content: space-around;
+    height: 300px;
+    background-color: #ffcb91;
+  }
+
+  .navigation-header {
+    border-bottom: 1px solid black;
+  }
+
+  .navigation-media a {
+    margin-left: 15px;
+    color: #fb743e;
+  }
+
+  .list-group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .list-group li {
+    list-style: none;
+    padding: 0 5px;
+  }
+
+  .list-group2 li {
+    list-style: none;
+  }
+
+  .icons {
+    color: #888;
+  }
+}

@@ -1,59 +1,40 @@
-![](https://img.shields.io/badge/myapp-blueviolet)
+# Electronic shop
 
-# Project Name
+> This is an electronic shop project built individially exploring different techniques and practices of HTML/CSS/Bootsrap.
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
+![screenshot](Images/Screenshot.png)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- BOOTSTRAP
+- coffee
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rocker-bell.github.io/electroshop/)
 
+## Authors
+
+👤 **Rockebell**
+
+- Twitter: [@twitterhandle](https://twitter.com/AnassTantane)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anass-tantane)
+- GitHub: [@githubhandle](https://github.com/rockerbell)
 
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
+To get a local copy of this project follow the steps below:
+Go to https://github.com/rocker-bell/electroshop:
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Shaher**
-
-- Twitter: [@twitterhandle](https://twitter.com/ShaherShamroukh/)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shaher-shamroukh/)
-- GitHub: [@githubhandle](https://github.com/Shaher-11/)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- Fork the project
+- Navigate the project, you can open it with VScode or any other code editor of choice
+- Happy coding!
 
 ## 🤝 Contributing
 
@@ -67,7 +48,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Thanks to Mohammed Anwar of Behance for the amazing website design that this project is based on.
 - Inspiration
 - etc
 

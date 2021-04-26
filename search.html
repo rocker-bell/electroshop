@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="#" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="search.css" />
+
+    <title>electroshop</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="upper-header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand font-weight-bold" href="index.html">
+              <img src="images/zattix-logo.PNG" alt="logo" />
+              Electro Shop</a
+            >
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active mx-3"
+                  aria-current="page"
+                  href="index.html"
+                >
+                  <i class="fas fa-home"></i> HOME</a
+                >
+                <a class="nav-link mx-3" href="#">
+                  <i class="fas fa-th-large"></i> COLLECTIONS
+                </a>
+                <a class="nav-link mx-3" href="#">
+                  <i class="fas fa-cart-plus"></i> PURCHASE LIST</a
+                >
+
+                <button
+                  type="submit"
+                  class="text-white btn btn-post-ad rounded-0 border-0 btn-sm bg-danger"
+                >
+                  POST AN AD
+                </button>
+                <a class="nav-link mx-3 d-lg-none d-sm-block" href="#">
+                  <i class="far fa-envelope mr-3"></i> Admin
+                  <i class="fas fa-user-circle ml-3"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="bd-highlight d-none d-lg-flex">
+              <div class="p-2 icons">
+                <a href="#"><i class="far fa-envelope"></i></a>
+              </div>
+              <div class="p-2 icons"><a href="#">Admin</a></div>
+              <div class="p-2 icons">
+                <a href="#"><i class="fas fa-user-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="bottom-header-container">
+        <div class="bottom-header text-white p-2 bg-danger">
+          <div class="captions text-center">
+            <h1>Electro Shop</h1>
+            <h2>Buying And Selling couldn't be simpler than this</h2>
+          </div>
+
+          <div class="search-section my-5 justify-content-center">
+            <form action="search.html">
+              <div class="container form">
+                <div class="d-flex justify-content-center">
+                  <select
+                    class="form-select rounded-0 w-50 border-danger"
+                    aria-label="Default select example"
+                  >
+                    <option selected>ALL CATEGORIES</option>
+                    <option value="1">COLLECTIONS</option>
+                    <option value="2">SPEAKERS</option>
+                    <option value="2">ACCESSORIES</option>
+                  </select>
+                  <input
+                    type="text"
+                    class="form-control form-input rounded-0 w-75 border-danger"
+                    placeholder="Product"
+                  />
+                  <input
+                    type="text"
+                    class="form-control form-input rounded-0 w-75 border-danger"
+                    placeholder="Location"
+                  />
+                  <button
+                    type="submit"
+                    class="ml-4 btn btn-submit-search rounded-0 border-0 bg-dark text-secondary"
+                  >
+                    SEARCH
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container-fluid my-4">
+      <div class="section-1-container radio-block container-fluid">
+        <div class="product-status border-bottom pt-2">
+          <label>
+            <input type="checkbox" />
+            Brand-new
+          </label>
+          <label>
+            <input type="checkbox" />
+            Used
+          </label>
+        </div>
+        <div class="product-type d-flex flex-column pt-2">
+          <label class="border-bottom pt-2">
+            <input type="checkbox" />
+            Wireless
+          </label>
+          <label class="border-bottom pt-2">
+            <input type="checkbox" />
+            Wired
+          </label>
+        </div>
+        <div class="product-brand d-flex flex-column pt-2">
+          <div class="brand d-flex pt-2 border-bottom checkbox-inline">
+            <label>
+              <input type="checkbox" />
+              Sony
+            </label>
+          </div>
+          <div class="brand d-flex pt-2 border-bottom checkbox-inline">
+            <label>
+              <input type="checkbox" />
+              Samsung
+            </label>
+          </div>
+          <div class="brand d-flex pt-2 border-bottom checkbox-inline">
+            <label>
+              <input type="checkbox" />
+              LG
+            </label>
+          </div>
+          <div class="brand d-flex pt-2 border-bottom checkbox-inline">
+            <label>
+              <input type="checkbox" />
+              Huawei
+            </label>
+          </div>
+          <div class="brand d-flex pt-2 border-bottom checkbox-inline">
+            <label>
+              <input type="checkbox" />
+              HP
+            </label>
+          </div>
+          <div class="brand d-flex pt-2 border-bottom checkbox-inline">
+            <label>
+              <input type="checkbox" />
+              Acer
+            </label>
+          </div>
+          <div class="brand d-flex pt-2 border-bottom">
+            <label>
+              <input type="checkbox" />
+              Dell
+            </label>
+          </div>
+        </div>
+        <div class="price-range d-flex flex-column pt-2">
+          <div class="range d-flex pt-2 border-bottom checkbox-inline">
+            <label>
+              <input type="checkbox" />
+              10$-100$
+            </label>
+          </div>
+          <div class="range d-flex pt-2 border-bottom checkbox-inline">
+            <label>
+              <input type="checkbox" />
+              100$-1000$
+            </label>
+          </div>
+          <div class="range d-flex pt-2 border-bottom checkbox-inline">
+            <label>
+              <input type="checkbox" />
+              1000$-2000$
+            </label>
+          </div>
+          <div class="range d-flex pt-2 border-bottom checkbox-inline">
+            <label>
+              <input type="checkbox" />
+              2000$-3500$
+            </label>
+          </div>
+          <div class="range d-flex pt-2 border-bottom checkbox-inline">
+            <label>
+              <input type="checkbox" />
+              3500$-5000$
+            </label>
+          </div>
+          <div class="range d-flex pt-2 border-bottom checkbox-inline">
+            <label>
+              <input type="checkbox" />
+              5000$
+            </label>
+          </div>
+        </div>
+      </div>
+      <section
+        class="d-flex flex-column justify-content-center section-2 border-0 container-fluid"
+      >
+        <div class="mobile-search-container">
+        <div class="search-mobile border mx-0 mt-2 mb-2">   
+            <input class="input-search" type="text" placeholder="search...">
+            <input class="input-location" type="text" placeholder="location">
+            <button type="submit" class="btn bg-danger text-white search-button">Search</button> 
+        </div></div>
+        <div class="content-header border-bottom text-dark p-2">
+          <p>
+            138 Results for <strong> "Speaker"</strong> Search at
+            <strong>"Nairobi"</strong> in Category <strong>"Speaker"</strong>
+          </p>
+        </div>
+        <div class="product-cards d-flex flex-column pt-2 mt-2">
+          <div class="card d-flex  container-fluid shadow p-2 mx-auto">
+            <div class="product-image container-fluid">
+              <img
+                class="prod-img"
+                src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg"
+                alt="bt-speaker"
+              />
+            </div>
+            <div class="product-infos d-flex flex-column">
+              <div class="product-name text-dark">
+                <p class="font-weight-bold">Bluetooth Speaker One</p>
+              </div>
+              <div class="product-state">
+                <p class="text-danger">New</p>
+              </div>
+              <div class="product-about">
+                <p class="text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet iure adipisci ex suscipit voluptas facilis, rem
+                  aliquid sed eaque nemo sunt commodi animi magnam sit libero!
+                  Aut quae ex tenetur?
+                </p>
+              </div>
+              <div class="product-location">
+                <p class="font-weight-bold">Location: Nairobi</p>
+              </div>
+              <div class="product-price d-flex justify-content-around">
+                <div class="date">
+                  <p class="text-secondary font-weight-bold">23 April 2021</p>
+                </div>
+                <div class="col-6 text-right pt-3">
+                  <div class="btn-group dropup">
+                    <button
+                      type="button"
+                      class="text-dark btn btn-post-ad rounded-0 border-0 btn-sm bg-danger mb-4"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      $499
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li>
+                        <a class="dropdown-item" href="#">Add to Collection</a>
+                      </li>
+                      <li><hr class="dropdown-divider border-danger" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Add to Wishlist</a>
+                      </li>
+                      <li><hr class="dropdown-divider border-danger" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">More Details</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card d-flex container-fluid shadow p-2 mx-auto">
+            <div class="product-image container-fluid">
+              <img
+                class="prod-img"
+                src="https://cdn.vox-cdn.com/thumbor/WX0Mp2YVGT6hRHzQdhYj-lBOF-k=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18958330/SonosBT.jpg"
+                alt="bt-speaker"
+              />
+            </div>
+            <div class="product-infos d-flex flex-column">
+              <div class="product-name text-dark">
+                <p class="font-weight-bold">Bluetooth Speaker One</p>
+              </div>
+              <div class="product-state">
+                <p class="text-danger">New</p>
+              </div>
+              <div class="product-about">
+                <p class="text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet iure adipisci ex suscipit voluptas facilis, rem
+                  aliquid sed eaque nemo sunt commodi animi magnam sit libero!
+                  Aut quae ex tenetur?
+                </p>
+              </div>
+              <div class="product-location">
+                <p class="font-weight-bold">Location: Nairobi</p>
+              </div>
+              <div class="product-price d-flex justify-content-around">
+                <div class="date">
+                  <p class="text-secondary font-weight-bold">23 April 2021</p>
+                </div>
+                <div class="col-6 text-right pt-3">
+                  <div class="btn-group dropup">
+                    <button
+                      type="button"
+                      class="text-dark btn btn-post-ad rounded-0 border-0 btn-sm bg-danger mb-4"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      $499
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li>
+                        <a class="dropdown-item" href="#">Add to Collection</a>
+                      </li>
+                      <li><hr class="dropdown-divider border-danger" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Add to Wishlist</a>
+                      </li>
+                      <li><hr class="dropdown-divider border-danger" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">More Details</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card d-flex container-fluid shadow p-2 mx-auto">
+            <div class="product-image container-fluid">
+              <img
+                class="prod-img"
+                src="https://cdn.vox-cdn.com/thumbor/WX0Mp2YVGT6hRHzQdhYj-lBOF-k=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18958330/SonosBT.jpg"
+                alt="bt-speaker"
+              />
+            </div>
+            <div class="product-infos d-flex flex-column">
+              <div class="product-name text-dark">
+                <p class="font-weight-bold">Bluetooth Speaker One</p>
+              </div>
+              <div class="product-state">
+                <p class="text-danger">New</p>
+              </div>
+              <div class="product-about">
+                <p class="text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet iure adipisci ex suscipit voluptas facilis, rem
+                  aliquid sed eaque nemo sunt commodi animi magnam sit libero!
+                  Aut quae ex tenetur?
+                </p>
+              </div>
+              <div class="product-location">
+                <p class="font-weight-bold">Location: Nairobi</p>
+              </div>
+              <div class="product-price d-flex justify-content-around">
+                <div class="date">
+                  <p class="text-secondary font-weight-bold">23 April 2021</p>
+                </div>
+                <div class="col-6 text-right pt-3">
+                  <div class="btn-group dropup">
+                    <button
+                      type="button"
+                      class="text-dark btn btn-post-ad rounded-0 border-0 btn-sm bg-danger mb-4"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      $499
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li>
+                        <a class="dropdown-item" href="#">Add to Collection</a>
+                      </li>
+                      <li><hr class="dropdown-divider border-danger" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Add to Wishlist</a>
+                      </li>
+                      <li><hr class="dropdown-divider border-danger" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">More Details</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card d-flex container-fluid shadow p-2 mx-auto">
+            <div class="product-image container-fluid">
+              <img
+                class="prod-img"
+                src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg"
+                alt="bt-speaker"
+              />
+            </div>
+            <div class="product-infos d-flex flex-column">
+              <div class="product-name text-dark">
+                <p class="font-weight-bold">Bluetooth Speaker One</p>
+              </div>
+              <div class="product-state">
+                <p class="text-danger">New</p>
+              </div>
+              <div class="product-about">
+                <p class="text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet iure adipisci ex suscipit voluptas facilis, rem
+                  aliquid sed eaque nemo sunt commodi animi magnam sit libero!
+                  Aut quae ex tenetur?
+                </p>
+              </div>
+              <div class="product-location">
+                <p class="font-weight-bold">Location: Nairobi</p>
+              </div>
+              <div class="product-price d-flex justify-content-around">
+                <div class="date">
+                  <p class="text-secondary font-weight-bold">23 April 2021</p>
+                </div>
+                <div class="col-6 text-right pt-3">
+                  <div class="btn-group dropup">
+                    <button
+                      type="button"
+                      class="text-dark btn btn-post-ad rounded-0 border-0 btn-sm bg-danger mb-4"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      $499
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li>
+                        <a class="dropdown-item" href="#">Add to Collection</a>
+                      </li>
+                      <li><hr class="dropdown-divider border-danger" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Add to Wishlist</a>
+                      </li>
+                      <li><hr class="dropdown-divider border-danger" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">More Details</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card d-flex container-fluid shadow p-2 mx-auto">
+            <div class="product-image container-fluid">
+              <img
+                class="prod-img"
+                src="https://cdn.vox-cdn.com/thumbor/WX0Mp2YVGT6hRHzQdhYj-lBOF-k=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18958330/SonosBT.jpg"
+                alt="bt-speaker"
+              />
+            </div>
+            <div class="product-infos d-flex flex-column">
+              <div class="product-name text-dark">
+                <p class="font-weight-bold">Bluetooth Speaker One</p>
+              </div>
+              <div class="product-state">
+                <p class="text-danger">New</p>
+              </div>
+              <div class="product-about">
+                <p class="text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet iure adipisci ex suscipit voluptas facilis, rem
+                  aliquid sed eaque nemo sunt commodi animi magnam sit libero!
+                  Aut quae ex tenetur?
+                </p>
+              </div>
+              <div class="product-location">
+                <p class="font-weight-bold">Location: Nairobi</p>
+              </div>
+              <div class="product-price d-flex justify-content-around">
+                <div class="date">
+                  <p class="text-secondary font-weight-bold">23 April 2021</p>
+                </div>
+                <div class="col-6 text-right pt-3">
+                  <div class="btn-group dropup">
+                    <button
+                      type="button"
+                      class="text-dark btn btn-post-ad rounded-0 border-0 btn-sm bg-danger mb-4"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      $499
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li>
+                        <a class="dropdown-item" href="#">Add to Collection</a>
+                      </li>
+                      <li><hr class="dropdown-divider border-danger" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Add to Wishlist</a>
+                      </li>
+                      <li><hr class="dropdown-divider border-danger" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">More Details</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center mx-auto">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+
+    <footer
+      class="d-flex flex-column bg-dark justify-content-center align-items-center pt-4 mt-4"
+    >
+      <div class="d-flex flex-column align-items-center">
+        <a href=""><img src="Images/zattix-logo.png" alt="" /></a>
+        <a href="" class="text-white">Electro Shop</a>
+      </div>
+
+      <div class="d-flex flex-row justify-content-center flex-wrap">
+        <a href="" class="footer-icons text-white"
+          ><i class="fab fa-facebook-f text-white"></i> Facebook</a
+        >
+        <a href="" class="footer-icons text-white"
+          ><i class="fab fa-instagram text-white"></i> Instagram</a
+        >
+        <a href="" class="footer-icons text-white"
+          ><i class="fab fa-twitter text-white"></i> Twitter</a
+        >
+      </div>
+
+      <p class="p-2 text-white">Copyright &copy; 2021</p>
+    </footer>
+  </body>
+</html>
