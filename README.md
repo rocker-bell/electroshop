@@ -2,7 +2,7 @@
 
 > This is an electronic shop project built individially exploring different techniques and practices of HTML/CSS/Bootsrap.
 
-![screenshot](Images/Screenshot.png)
+![screenshot](Images/app_screenshot.png)
 
 Additional description about the project and its features.
 
