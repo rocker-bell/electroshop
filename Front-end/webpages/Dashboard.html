@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dashboard page</h1>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+    <div class="wrapper">
+        <div class="container left-bar">
+            <ul class="left-bar-list">
+                <li class="left-list">General metrics</li>
+                <li class="left-list">Products</li>
+                <li class="left-list">Users</li>
+                <li class="left-list">Ads</li>
+                <li class="left-list">messages</li>
+            </ul>
+        </div>
+        <div class="container right-bar"></div>
+    </div>
+    
+</body>
+</html>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column; 
+        gap: 10px;
+
+
+    }
+
+    .wrapper {
+        width: 95%;
+        height: 100%;
+        border: 2px solid red;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+        padding: 5px 5px;
+        margin: 5px 5px;
+        
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .left-bar {
+        width: 10%;
+        border: 1px dashed grey;
+        display: flex;  
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .left-bar-list {
+        border: 1px solid black;
+        padding: 5px 5px;
+        width: 100%;
+        height: 50%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+    }
+    .left-list {
+        border: 1px solid blue;
+        background-color: blue;
+        border-radius: 50px;
+        color: white;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5px 5px;
+        cursor: pointer;
+    }
+
+    .right-bar {
+        width: 80%;
+        border: 1px dashed blue;
+    }
+
+</style>

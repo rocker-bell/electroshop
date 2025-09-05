@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Admin Page</h1>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="search.html">Search</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+
+
+    <div class="wrapper">
+        <div class="container login">
+            <div class="form-group">
+                <label for="Email" class="form-label">Email</label>
+                <input type="text" id="Email" placeholder="Enter Email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" class="form-control">
+            </div>
+           
+            <button type="submit" class="btn btn-login">Login</button>
+            <h4><p id="register-user-toggle">new user ? register here !</p></h4>
+            
+        </div>
+        <div class="container register">
+            <div class="form-group">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" id="username" placeholder="Enter Username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" id="email" placeholder="Enter Email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-register">Register</button>
+            <h4><p id="toggle-user-login" >already a user ? login here !</p></h4>
+
+
+        </div>
+    </div>
+
+
+    <script>
+        const register_user_toggle = document.getElementById('register-user-toggle');
+        const login_user_toggle = document.getElementById('toggle-user-login');
+        const login_container = document.querySelector('.login');
+        const register_container = document.querySelector('.register');
+        const btn_login = document.querySelector('.btn-login');
+        const btn_register = document.querySelector('.btn-register');
+
+
+        register_user_toggle.addEventListener('click', function () {
+            if (register_container.style.display === 'none') {
+                register_container.style.display = 'flex';
+                login_container.style.display = 'none';
+            } else {
+                register_container.style.display = 'none';
+                login_container.style.display = 'flex';
+            }
+        })
+
+        login_user_toggle.addEventListener('click', function () {
+            if (login_container.style.display === 'none') {
+                login_container.style.display = 'flex';
+                register_container.style.display = 'none';
+            } else {
+                login_container.style.display = 'none';
+                register_container.style.display = 'flex';
+            }
+        })
+
+        btn_login.addEventListener('click', function () {
+            alert('Login button clicked');
+        })
+
+        btn_register.addEventListener('click', function () {
+            alert('Register button clicked');
+        })
+
+    </script>
+
+</body>
+</html>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column; 
+
+
+    }
+
+    .wrapper {
+        width: 70%;
+        height: 500px;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .login {
+        border: 2px solid blue;
+        transition: opacity 0.5s ease;
+    }
+
+    .register {
+        border: 2px solid green;
+        display: none;
+        transition: opacity 0.5s ease;
+    }
+
+    .form-group {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .form-label {
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid gray;        
+    }
+    .form-control {
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        padding-left: 10px;
+        border: 1px solid black; 
+    }
+    #register-user-toggle {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    #toggle-user-login {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .btn {
+        border: none;
+        background-color: grey;
+        color: white;
+        cursor: pointer;
+        width: 150px;
+        height: 40px;
+    }
+</style>
