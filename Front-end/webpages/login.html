@@ -19,11 +19,11 @@
         <div class="container login">
             <div class="form-group">
                 <label for="Email" class="form-label">Email</label>
-                <input type="text" id="Email" placeholder="Enter Email" class="form-control">
+                <input type="text" id="email-login" placeholder="Enter Email" class="form-control">
             </div>
             <div class="form-group">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" id="password" placeholder="Enter Password" class="form-control">
+                <input type="password" id="login-password" placeholder="Enter Password" class="form-control">
             </div>
            
             <button type="submit" class="btn btn-login">Login</button>
@@ -37,16 +37,14 @@
             </div>
             <div class="form-group">
                 <label for="email" class="form-label">Email</label>
-                <input type="text" id="email" placeholder="Enter Email" class="form-control">
+                <input type="text" id="email-register" placeholder="Enter Email" class="form-control">
             </div>
             <div class="form-group">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" id="password" placeholder="Enter Password" class="form-control">
+                <input type="password" id="register-password" placeholder="Enter Password" class="form-control">
             </div>
             <button type="submit" class="btn btn-register">Register</button>
             <h4><p id="toggle-user-login" >already a user ? login here !</p></h4>
-
-
         </div>
     </div>
 
@@ -82,10 +80,80 @@
 
         btn_login.addEventListener('click', function () {
             alert('Login button clicked');
+            const email = document.getElementById('email-login').value;
+            const password = document.getElementById('login-password').value;
+            if (!email || !password) {
+                alert('Please fill all the fields');
+                return;
+            }
+            async function LoginUser() {
+                const response = await fetch('http://localhost:3000/Login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email,
+                        password
+                    })
+                });
+                const Userdata = await response.json();
+                console.log(Userdata);
+                if (response.status === 200) {
+                    alert('User logged in successfully');
+                    localStorage.setItem('token', Userdata.token);
+                    window.location.href = 'Dashboard.html';
+                } else {
+                    alert('Error logging in user');
+                }
+            }
+            LoginUser();
         })
 
         btn_register.addEventListener('click', function () {
             alert('Register button clicked');
+
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email-register').value;
+            const password = document.getElementById('register-password').value;
+
+            const userData = {
+                username,
+                email,
+                password
+            };
+
+            if (!username || !email || !password) {
+                alert('Please fill all the fields');
+                return;
+            }
+
+            async function registerUser() {
+                const response = await fetch('http://localhost:3000/Register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                       username,
+                       email,
+                       password
+                    })
+                });
+                const data = await response.json();
+                console.log(data);
+                if (response.status === 201) {
+                    alert('User registered successfully');
+                    const register_container = document.querySelector('.register');
+                    register_container.style.display = 'none';
+                    const login_container = document.querySelector('.login');
+                    login_container.style.display = 'flex';
+
+                } else {
+                    alert('Error registering user');
+                }
+            }
+            registerUser();
         })
 
     </script>

@@ -12,7 +12,7 @@
     "stylelint-scss": "3.17.x"
   },
   "scripts": {
-    "start": "http-server . -p 8080",
+    "start": "http-server . -p 7000",
     "test": "npm run webhint && npm run stylelint && echo \"✅✅✅ All tests passed ✅✅✅\"",
     "webhint": "hint .",
     "stylelint": "stylelint **/*.css"

@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const fs = require('fs')
+const fs = require('fs');
+const path = require('path');
 const cors = require('cors');
 // const JWT = require('jsonwebtoken');
 const UID = require('uid2');
@@ -12,12 +13,13 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-const FILE_PATH = "./data/products.json"
+const FILE_PATH = "./data/users.json"
+const DIR_PATH = path.dirname(FILE_PATH);
 
-if(!fs.existSync(FILE_PATH)) {
-    fs.writeFileSync(FILE_PATH, JSON.stringify([]))
+// Check if the directory exists, if not, create it
+if (!fs.existsSync(DIR_PATH)) {
+  fs.mkdirSync(DIR_PATH, { recursive: true });
 }
-
 const readProducts = () => { 
     const data = fs.readFileSync(FILE_PATH)
     return JSON.parse(data)

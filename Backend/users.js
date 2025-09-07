@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const fs = require('fs')
+const fs = require('fs');
+const path = require('path');
 const cors = require('cors');
 const JWT = require('jsonwebtoken');
 const UID = require('uid2');
@@ -10,16 +11,24 @@ const PORT = process.env.PORT || 3000;
 const SECRET = '1d6642e8d862f641bd8a048722a7e5d27d8f02b4d306cd2f6656c8d06f1b1c0ee54d29da570497ecf032e53236d60a037e9a5f08090fc70894cbf99da8ca1573';
 
 
-const FILE_PATH = "./data/users.json"
+
 
 
 app.use(bodyParser.json());
 app.use(cors());
 
-if (!fs.existsSync(FILE_PATH)) { 
-    fs.writeFileSync(FILE_PATH, JSON.stringify([]))
+const FILE_PATH = "./data/users.json"
+const DIR_PATH = path.dirname(FILE_PATH);
 
+// Check if the directory exists, if not, create it
+if (!fs.existsSync(DIR_PATH)) {
+  fs.mkdirSync(DIR_PATH, { recursive: true });
 }
+
+if (!fs.existsSync(FILE_PATH)) {
+  fs.writeFileSync(FILE_PATH, '[]');
+}
+
 
 const readUsers = () => {
     const data = fs.readFileSync(FILE_PATH)
@@ -34,7 +43,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.post('/register', (req, res) => {
+app.post('/Register', (req, res) => {
     const { username, email,  password } = req.body;
     if (!username || !email || !password) {
         return res.status(400).json({ message: 'Username and password are required.' });
@@ -64,6 +73,7 @@ app.post('/Login',  (req, res) => {
 
     const token = JWT.sign({ userId: user.id }, SECRET, { expiresIn: '1h' });
     res.json({ token });
+    res.status(200).json({ message: 'Login successful.' });
 })
 
 app.get('/users', (req, res) => {
