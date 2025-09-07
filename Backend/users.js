@@ -66,6 +66,23 @@ app.post('/Login',  (req, res) => {
     res.json({ token });
 })
 
+app.get('/users', (req, res) => {
+    const users = readUsers();
+    res.json(users);
+});
+
+app.get('/users/:id', (req, res) => {
+    const { id } = req.params;
+    const users = readUsers();
+    const user = users.find(u => u.id === id);
+    if (!user) {
+        return res.status(404).json({ message: 'User not found.' });
+    }   
+    res.json(user);
+})
+
+
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 
