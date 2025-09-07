@@ -15,15 +15,94 @@
     <div class="wrapper">
         <div class="container left-bar">
             <ul class="left-bar-list">
-                <li class="left-list">General metrics</li>
-                <li class="left-list">Products</li>
-                <li class="left-list">Users</li>
-                <li class="left-list">Ads</li>
-                <li class="left-list">messages</li>
+                <li class="left-list General-metric-slider">General metrics</li>
+                <li class="left-list Products-slider">Products</li>
+                <li class="left-list Users-Slider">Users</li>
+                <li class="left-list Ads-Slider">Ads</li>
+                <li class="left-list messages-Slider">messages</li>
             </ul>
         </div>
-        <div class="container right-bar"></div>
+        <div class="container right-bar">
+            <div class="default-section section">
+                <h2>Welcome to the Dashboard</h2>
+                <p>Select an option from the left to view details.</p>
+            </div>
+            <div class="General-metrics-section section hidden">
+                <h2>General Metrics</h2>
+                <p>Here you can view general metrics.</p>
+
+            </div>
+             <div class="Products-section section hidden">
+                <h2>Products</h2>
+                <p>Here you can view Products.</p>
+
+            </div>
+             <div class="Users-section section hidden">
+                <h2>Users</h2>
+                <p>Here you can view Users.</p> 
+            </div>
+                <div class="Ads-section section hidden">
+                    <h2>Ads</h2>
+                    <p>Here you can view Ads.</p>
+                </div>
+                <div class="messages-section section hidden">
+                    <h2>messages</h2>
+                    <p>Here you can view messages.</p>
+                </div>
+        </div>
     </div>
+
+    
+    <script>
+        const generalMetricsSlider = document.querySelector('.General-metric-slider');
+        const productsSlider = document.querySelector('.Products-slider');
+        const usersSlider = document.querySelector('.Users-Slider');
+        const adsSlider = document.querySelector('.Ads-Slider');
+        const messagesSlider = document.querySelector('.messages-Slider');
+
+        const defaultSection = document.querySelector('.default-section');
+        const generalMetricsSection = document.querySelector('.General-metrics-section');
+        const productsSection = document.querySelector('.Products-section');
+        const usersSection = document.querySelector('.Users-section');
+        const adsSection = document.querySelector('.Ads-section');
+        const messagesSection = document.querySelector('.messages-section');
+
+
+
+        function hideAllSections() {
+            defaultSection.classList.add('hidden');
+            generalMetricsSection.classList.add('hidden');
+            productsSection.classList.add('hidden');
+            usersSection.classList.add('hidden');
+            adsSection.classList.add('hidden');
+            messagesSection.classList.add('hidden');
+        }
+        generalMetricsSlider.addEventListener('click', function() {
+            hideAllSections();
+            generalMetricsSection.classList.remove('hidden');
+        });
+        productsSlider.addEventListener('click', function() {
+            hideAllSections();
+            productsSection.classList.remove('hidden');
+        });
+        usersSlider.addEventListener('click', function() {
+            hideAllSections();
+            usersSection.classList.remove('hidden');
+        });
+        adsSlider.addEventListener('click', function() {
+            hideAllSections();
+            adsSection.classList.remove('hidden');
+        });
+        messagesSlider.addEventListener('click', function() {
+            hideAllSections();
+            messagesSection.classList.remove('hidden');
+        });
+        defaultSection.addEventListener('click', function() {
+            hideAllSections();
+            defaultSection.classList.remove('hidden');
+        });
+
+    </script>
     
 </body>
 </html>
@@ -110,6 +189,19 @@
     .right-bar {
         width: 80%;
         border: 1px dashed blue;
+        padding: 5px 5px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .section {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        padding: 10px 10px;
+        margin: 10px 10px;
     }
 
 </style>
