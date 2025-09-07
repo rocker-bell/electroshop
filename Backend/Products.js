@@ -3,8 +3,10 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
+
 // const JWT = require('jsonwebtoken');
 const UID = require('uid2');
+const { FILE } = require('dns');
 
 app = express();
 const PORT = process.env.PORT || 3001;
@@ -20,6 +22,11 @@ const DIR_PATH = path.dirname(FILE_PATH);
 if (!fs.existsSync(DIR_PATH)) {
   fs.mkdirSync(DIR_PATH, { recursive: true });
 }
+
+if(!fs.existsSync(FILE_PATH)) {
+    fs.writeFileSync(FILE_PATH, '[]');
+}
+
 const readProducts = () => { 
     const data = fs.readFileSync(FILE_PATH)
     return JSON.parse(data)
