@@ -26,28 +26,93 @@
             <div class="default-section section">
                 <h2>Welcome to the Dashboard</h2>
                 <p>Select an option from the left to view details.</p>
+                
             </div>
             <div class="General-metrics-section section hidden">
                 <h2>General Metrics</h2>
                 <p>Here you can view general metrics.</p>
+                <div class="General-section-navBar">
+
+                </div>
 
             </div>
              <div class="Products-section section hidden">
                 <h2>Products</h2>
                 <p>Here you can view Products.</p>
+                <div class="Products-section-navBar  section-navBar">
+                        <ul class="Products-navBar-lists">
+                            <li class="Section-list">
+                                choice 1
+                            </li>
+                            <li class="Section-list">
+                                choice 2
+                            </li>
+                            <li class="Section-list">
+                                choice 3
+                            </li>
+
+                        </ul>
+                    
+                </div>
 
             </div>
              <div class="Users-section section hidden">
                 <h2>Users</h2>
                 <p>Here you can view Users.</p> 
+                <div class="Users-section-navBar  section-navBar">
+                    <ul class="Products-navBar-lists">
+                            <li class="Section-list">
+                                choice 1
+                            </li>
+                            <li class="Section-list">
+                                choice 2
+                            </li>
+                            <li class="Section-list">
+                                choice 3
+                            </li>
+
+                        </ul>
+                    
+                </div>
             </div>
                 <div class="Ads-section section hidden">
                     <h2>Ads</h2>
                     <p>Here you can view Ads.</p>
+                    <div class="Ads-section-navBar  section-navBar">
+                        <ul class="Products-navBar-lists ">
+                            <li class="Section-list">
+                                choice 1
+                            </li>
+                            <li class="Section-list">
+                                choice 2
+                            </li>
+                            <li class="Section-list">
+                                choice 3
+                            </li>
+
+                        </ul>
+                    
+                </div>
+                    
                 </div>
                 <div class="messages-section section hidden">
                     <h2>messages</h2>
                     <p>Here you can view messages.</p>
+                    <div class="messages-section-navBar section-navBar">
+                        <ul class="Products-navBar-lists">
+                            <li class="Section-list">
+                                choice 1
+                            </li>
+                            <li class="Section-list">
+                                choice 2
+                            </li>
+                            <li class="Section-list">
+                                choice 3
+                            </li>
+
+                        </ul>
+                    
+                </div>
                 </div>
         </div>
     </div>
@@ -203,5 +268,32 @@
         padding: 10px 10px;
         margin: 10px 10px;
     }
+
+    .Products-navBar-lists {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .Section-list {
+        border: 1px solid black;
+        padding: 10px;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .section-navBar  {
+        border: 1px solid black;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+
+
 
 </style>
