@@ -3,856 +3,508 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="#" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>electroshop</title>
+    <meta name="description" content="Electro Shop - Premium Consumer Electronics, High-Performance Laptops, Flagship Phones, Audio & Smart Tech." />
+    <title>Electro Shop | Next-Gen Electronics & High-Performance Tech</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
+    <!-- Bootstrap 4 Grid & Modal Support -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    
+    <!-- Custom Design System Stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <header class="d-flex flex-column">
-      <div class="upper-header sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand font-weight-bold" href="index.html.html">
-              <img src="images/zattix-logo.PNG" alt="logo" />
-              Electro Shop</a
-            >
-            <button
-              type="button"
-              class="navbar-toggler"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse">
-              <div class="navbar-nav">
-                <a
-                  class="nav-link active mx-3"
-                  aria-current="page"
-                  href="index.html"
-                >
-                  <i class="fas fa-home"></i> HOME</a
-                >
-                <a class="nav-link mx-3" href="#">
-                  <i class="fas fa-th-large"></i> COLLECTIONS
-                </a>
-                <a class="nav-link mx-3" href="#">
-                  <i class="fas fa-cart-plus"></i> PURCHASE LIST</a
-                >
-
-                <a
-                  href="./webpages/postad.html"
-                  
-                  class="text-white btn btn-post-ad rounded-0 border-0 btn-sm bg-danger"
-                >
-                  POST AN AD
-                </a>
-                <a class="nav-link mx-3 d-lg-none d-sm-block" href="./webpages/login.html">
-                  <i class="far fa-envelope mr-3"></i> Admin
-                  <i class="fas fa-user-circle ml-3" ></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="bd-highlight d-none d-lg-flex">
-              <div class="p-2 icons">
-                <a href="#"><i class="far fa-envelope"></i></a>
-              </div>
-              <div class="p-2 icons"><a href="./webpages/login.html">Admin</a></div>
-              <div class="p-2 icons">
-                <a href="#"><i class="fas fa-user-circle"></i></a>
-              </div>
-            </div>
+    <!-- Top Announcement Utility Bar -->
+    <div class="top-announcement-bar">
+      <div class="container">
+        <div class="top-bar-flex">
+          <div class="top-bar-left">
+            <span><i class="fas fa-truck text-danger mr-1"></i> Free Express Shipping on orders over $150</span>
+            <span><i class="fas fa-shield-alt text-success mr-1"></i> Official 2-Year Brand Warranty</span>
           </div>
-        </nav>
+          <div class="top-bar-right">
+            <a href="webpages/Dashboard.html" class="top-bar-link"><i class="fas fa-tachometer-alt"></i> Admin Dashboard</a>
+            <a href="webpages/login.html" class="top-bar-link"><i class="fas fa-user-circle"></i> Account / Sign In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="nav-container">
+          <!-- Brand Logo -->
+          <a href="index.html" class="brand-logo" id="homeBrandLink">
+            <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+            <span>ELECTRO</span>SHOP
+          </a>
+
+          <!-- Omnipresent Live Search Bar -->
+          <div class="search-bar-wrapper">
+            <form id="headerSearchForm" class="search-input-group">
+              <i class="fas fa-search search-icon"></i>
+              <select id="searchCategorySelect" class="search-category-select" aria-label="Select category for search">
+                <option value="all">All Categories</option>
+                <option value="laptops">Laptops</option>
+                <option value="smartphones">Smartphones</option>
+                <option value="audio">Audio</option>
+                <option value="gaming">Gaming</option>
+                <option value="wearables">Wearables</option>
+                <option value="cameras">Cameras</option>
+                <option value="accessories">Accessories</option>
+              </select>
+              <input
+                type="text"
+                id="mainSearchInput"
+                class="search-input"
+                placeholder="Search laptops, smartphones, headphones, gaming gear..."
+                autocomplete="off"
+              />
+              <button type="submit" class="search-submit-btn" aria-label="Search">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+
+            <!-- Autocomplete Live Results Dropdown -->
+            <div id="searchSuggestions" class="search-suggestions-dropdown"></div>
+          </div>
+
+          <!-- Nav Action Buttons (Wishlist, Cart, Login) -->
+          <div class="nav-actions">
+            <!-- Wishlist Button -->
+            <button type="button" class="nav-action-btn" onclick="window.location.href='search.html'" title="Wishlist">
+              <div class="nav-icon-badge-wrap">
+                <i class="far fa-heart"></i>
+                <span class="badge-count wishlist-badge-count" style="display: none;">0</span>
+              </div>
+              <div class="nav-action-text d-none d-lg-block">
+                <span class="nav-action-sub">Saved</span>
+                <span class="nav-action-title">Wishlist</span>
+              </div>
+            </button>
+
+            <!-- Shopping Cart Button -->
+            <button type="button" class="nav-action-btn" onclick="Store.openCartDrawer()" title="View Cart">
+              <div class="nav-icon-badge-wrap">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge-count cart-badge-count" style="display: none;">0</span>
+              </div>
+              <div class="nav-action-text d-none d-lg-block">
+                <span class="nav-action-sub">My Cart</span>
+                <span class="nav-action-title" id="cartSubtotal">$0.00</span>
+              </div>
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div class="bottom-header-container">
-        <div class="bottom-header text-white p-2 bg-danger">
-          <div class="captions text-center">
-            <h1>Electro Shop</h1>
-            <h2>Buying And Selling couldn't be simpler than this</h2>
-          </div>
-
-          <div class="search-section my-5 justify-content-center">
-            <form action="search.html">
-              <div class="container form">
-                <div class="d-flex justify-content-center">
-                  <select
-                    class="form-select rounded-0 w-50 border-danger"
-                    aria-label="Default select example"
-                  >
-                    <option selected>ALL CATEGORIES</option>
-                    <option value="1">COLLECTIONS</option>
-                    <option value="2">SPEAKERS</option>
-                    <option value="2">ACCESSORIES</option>
-                  </select>
-                  <input
-                    type="text"
-                    class="form-control form-input rounded-0 w-75 border-danger"
-                    placeholder="Product"
-                  />
-                  <input
-                    type="text"
-                    class="form-control form-input rounded-0 w-75 border-danger"
-                    placeholder="Location"
-                  />
-                  <button
-                    type="submit"
-                    class="ml-4 btn btn-submit-search rounded-0 border-0 bg-dark text-secondary"
-                  >
-                    SEARCH
-                  </button>
-                </div>
-              </div>
-            </form>
+      <!-- Secondary Category Navigation Bar -->
+      <div class="category-nav-bar">
+        <div class="container">
+          <div class="category-nav-flex">
+            <div class="cat-nav-links">
+              <a href="index.html" class="cat-nav-link active"><i class="fas fa-home"></i> Home</a>
+              <a href="search.html" class="cat-nav-link"><i class="fas fa-th-large"></i> All Products</a>
+              <a href="search.html?cat=laptops" class="cat-nav-link"><i class="fas fa-laptop"></i> Laptops</a>
+              <a href="search.html?cat=smartphones" class="cat-nav-link"><i class="fas fa-mobile-alt"></i> Smartphones</a>
+              <a href="search.html?cat=audio" class="cat-nav-link"><i class="fas fa-headphones-alt"></i> Audio</a>
+              <a href="search.html?cat=gaming" class="cat-nav-link"><i class="fas fa-gamepad"></i> Gaming</a>
+              <a href="search.html?cat=wearables" class="cat-nav-link"><i class="fas fa-clock"></i> Wearables</a>
+              <a href="search.html?cat=cameras" class="cat-nav-link"><i class="fas fa-camera"></i> Cameras & Drones</a>
+              <a href="search.html?cat=accessories" class="cat-nav-link"><i class="fas fa-bolt"></i> Accessories</a>
+            </div>
+            <a href="search.html?sort=newest" class="cat-nav-right-deals d-none d-md-flex">
+              <i class="fas fa-fire-alt"></i> Flash Deals & New In
+            </a>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="bg-white d-flex flex-column container-fluid">
-      <div class="new-hot-product-container">
-        <div class="hot-product-container  d-flex flex-column">
-          <div class="hot-product-header mx-auto">
-            <a href="#" class="text-danger font-weight-bold"
-              >TOP SELLER THIS WEEK</a
-            >
-          </div>
-          <div class="hot-product justify-content-center d-flex shadow">
-            <div class="Add-container position-relative">
-              <div
-                class="position-relative arrow-container arrow-container-left"
-              >
-                <a href="#" class="left-arrow position absolute"
-                  ><i class="fas fa-arrow-left"></i
-                ></a>
-              </div>
-              <div class="hot-product-img position-relative">
-                <img
-                  src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg"
-                  class="hot-img position-absolute shadow"
-                  alt=""
-                />
-              </div>
-              <div class="product-details p-2 position-absolute">
-                <h3 class="helvetica-bold font-weght-bold fs-1">
-                  Bluetooth Speaker One
-                </h3>
-                <small>Brand: Sony</small>
-                <p class="text-danger">New</p>
-                <p>From: USA</p>
-              </div>
-              <div
-                class="product-price d-flex justify-content-between position-absolute"
-              >
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn rounded-0"
-                    data-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <i class="far fa-plus-square"></i>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">Add to Collection</a>
-                    </li>
-                    <li><hr class="dropdown-divider border-danger" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Add to Wishlist</a>
-                    </li>
-                    <li><hr class="dropdown-divider border-danger" /></li>
-                    <li><a class="dropdown-item" href="#">More Details</a></li>
-                  </ul>
-                </div>
-                <button
-                  type="button"
-                  class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-                >
-                  $499.00
-                </button>
-              </div>
-            </div>
-
-            <div
-              class="position-relative arrow-container arrow-container-right"
-            >
-              <a href="#" class="right-arrow position-absolute"
-                ><i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <section class="d-flex flex-column mx-auto container-fluid">
-        <div class="font-weight-bold mb-5 px-2 d-flex section-header">
-          <a href="#"
-            ><i class="fas fa-th"></i> Speakers
-            <small>(Lorem Ipsum is simply dummy tex)</small></a
-          >
-          <a href="#">See All</a>
-        </div>
-        <div class="justify-content-around products">
-          <div class="card d-flex bg-light">
-            <img
-              class="prod-img"
-              src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg"
-              alt="bt-speaker"
-            />
-
-            <div class="product-details p-2">
-              <h3 class="helvetica-bold font-weght-bold fs-1">
-                Bluetooth Speaker One
-              </h3>
-              <small>Brand: Sony</small>
-              <p class="text-danger">New</p>
-              <p>From: USA</p>
-            </div>
-            <div class="product-price d-flex justify-content-between">
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn rounded-0"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="far fa-plus-square"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Add to Collection</a>
-                  </li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">More Details</a></li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-              >
-                $499.00
-              </button>
-            </div>
-          </div>
-
-          <div class="card bg-light d-flex">
-            <img
-              class="prod-img"
-              src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg"
-              alt="bt-speaker"
-            />
-
-            <div class="product-details p-2">
-              <h3 class="helvetica-bold font-weght-bold fs-1">
-                Bluetooth Speaker One
-              </h3>
-              <small>Brand: Sony</small>
-              <p class="text-danger">New</p>
-              <p>From: USA</p>
-            </div>
-            <div class="product-price d-flex justify-content-between">
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn rounded-0"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="far fa-plus-square"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Add to Collection</a>
-                  </li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">More Details</a></li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-              >
-                $499.00
-              </button>
-            </div>
-          </div>
-
-          <div class="card bg-light d-flex">
-            <img
-              class="prod-img"
-              src="https://cdn.vox-cdn.com/thumbor/WX0Mp2YVGT6hRHzQdhYj-lBOF-k=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18958330/SonosBT.jpg"
-              alt="bt-speaker"
-            />
-
-            <div class="product-details p-2">
-              <h3 class="helvetica-bold font-weght-bold fs-1">
-                Bluetooth Speaker One
-              </h3>
-              <small>Brand: Sony</small>
-              <p class="text-danger">New</p>
-              <p>From: USA</p>
-            </div>
-            <div class="product-price d-flex justify-content-between">
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn rounded-0"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="far fa-plus-square"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Add to Collection</a>
-                  </li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">More Details</a></li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-              >
-                $499.00
-              </button>
-            </div>
-          </div>
-
-          <div class="card bg-light d-flex">
-            <img
-              class="prod-img"
-              src="https://static.bhphoto.com/images/images2000x2000/1556732764_1475299.jpg"
-              alt="bt-speaker"
-            />
-
-            <div class="product-details p-2">
-              <h3 class="helvetica-bold font-weght-bold fs-1">
-                Bluetooth Speaker One
-              </h3>
-              <small>Brand: Sony</small>
-              <p class="text-danger">New</p>
-              <p>From: USA</p>
-            </div>
-            <div class="product-price d-flex justify-content-between">
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn rounded-0"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="far fa-plus-square"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Add to Collection</a>
-                  </li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">More Details</a></li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-              >
-                $499.00
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="d-flex flex-column mx-auto container-fluid">
-        <div class="font-weight-bold mb-5 px-2 d-flex section-header">
-          <a href="#"
-            ><i class="fas fa-th"></i> Speakers
-            <small>(Lorem Ipsum is simply dummy tex)</small></a
-          >
-          <a href="#">See All</a>
-        </div>
-        <div class="justify-content-around products">
-          <div class="card bg-light d-flex shadow">
-            <img
-              class="prod-img"
-              src="https://static.bhphoto.com/images/images2000x2000/1556732764_1475299.jpg"
-              alt="bt-speaker"
-            />
-
-            <div class="product-details p-2">
-              <h3 class="helvetica-bold font-weght-bold fs-1">
-                Bluetooth Speaker One
-              </h3>
-              <small>Brand: Sony</small>
-              <p class="text-danger">New</p>
-              <p>From: USA</p>
-            </div>
-            <div class="product-price d-flex justify-content-between">
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn rounded-0"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="far fa-plus-square"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Add to Collection</a>
-                  </li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">More Details</a></li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-              >
-                $499.00
-              </button>
-            </div>
-          </div>
-
-          <div class="card bg-light d-flex shadow">
-            <img
-              class="prod-img"
-              src="https://static.bhphoto.com/images/images2000x2000/1556732764_1475299.jpg"
-              alt="bt-speaker"
-            />
-
-            <div class="product-details p-2">
-              <h3 class="helvetica-bold font-weght-bold fs-1">
-                Bluetooth Speaker One
-              </h3>
-              <small>Brand: Sony</small>
-              <p class="text-danger">New</p>
-              <p>From: USA</p>
-            </div>
-            <div class="product-price d-flex justify-content-between">
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn rounded-0"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="far fa-plus-square"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Add to Collection</a>
-                  </li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">More Details</a></li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-              >
-                $499.00
-              </button>
-            </div>
-          </div>
-
-          <div class="card bg-light d-flex shadow">
-            <img
-              class="prod-img"
-              src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg"
-              alt="bt-speaker"
-            />
-
-            <div class="product-details p-2">
-              <h3 class="helvetica-bold font-weght-bold fs-1">
-                Bluetooth Speaker One
-              </h3>
-              <small>Brand: Sony</small>
-              <p class="text-danger">New</p>
-              <p>From: USA</p>
-            </div>
-            <div class="product-price d-flex justify-content-between">
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn rounded-0"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="far fa-plus-square"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Add to Collection</a>
-                  </li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">More Details</a></li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-              >
-                $499.00
-              </button>
-            </div>
-          </div>
-
-          <div class="card bg-light d-flex shadow">
-            <img
-              class="prod-img"
-              src="https://static.bhphoto.com/images/images2000x2000/1556732764_1475299.jpg"
-              alt="bt-speaker"
-            />
-
-            <div class="product-details p-2">
-              <h3 class="helvetica-bold font-weght-bold fs-1">
-                Bluetooth Speaker One
-              </h3>
-              <small>Brand: Sony</small>
-              <p class="text-danger">New</p>
-              <p>From: USA</p>
-            </div>
-            <div class="product-price d-flex justify-content-between">
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn rounded-0"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="far fa-plus-square"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Add to Collection</a>
-                  </li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">More Details</a></li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-              >
-                $499.00
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="d-flex flex-column mx-auto container-fluid">
-        <div class="font-weight-bold mb-5 px-2 d-flex section-header">
-          <a href="#"
-            ><i class="fas fa-th"></i> Speakers
-            <small>(Lorem Ipsum is simply dummy tex)</small></a
-          >
-          <a href="#">See All</a>
-        </div>
-        <div class="justify-content-around products">
-          <div class="card bg-light d-flex shadow">
-            <img
-              class="prod-img"
-              src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg"
-              alt="bt-speaker"
-            />
-
-            <div class="product-details p-2">
-              <h3 class="helvetica-bold font-weght-bold fs-1">
-                Bluetooth Speaker One
-              </h3>
-              <small>Brand: Sony</small>
-              <p class="text-danger">New</p>
-              <p>From: USA</p>
-            </div>
-            <div class="product-price d-flex justify-content-between">
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn rounded-0"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="far fa-plus-square"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Add to Collection</a>
-                  </li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">More Details</a></li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-              >
-                $499.00
-              </button>
-            </div>
-          </div>
-
-          <div class="card bg-light d-flex shadow">
-            <img
-              class="prod-img"
-              src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg"
-              alt="bt-speaker"
-            />
-
-            <div class="product-details p-2">
-              <h3 class="helvetica-bold font-weght-bold fs-1">
-                Bluetooth Speaker One
-              </h3>
-              <small>Brand: Sony</small>
-              <p class="text-danger">New</p>
-              <p>From: USA</p>
-            </div>
-            <div class="product-price d-flex justify-content-between">
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn rounded-0"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="far fa-plus-square"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Add to Collection</a>
-                  </li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">More Details</a></li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-              >
-                $499.00
-              </button>
-            </div>
-          </div>
-
-          <div class="card bg-light d-flex shadow">
-            <img
-              class="prod-img"
-              src="https://auspost.com.au/shop/static/WFS/AusPost-Shop-Site/-/AusPost-Shop/en_AU/product/52044-AusPost/1/org.jpg"
-              alt="bt-speaker"
-            />
-
-            <div class="product-details p-2">
-              <h3 class="helvetica-bold font-weght-bold fs-1">
-                Bluetooth Speaker One
-              </h3>
-              <small>Brand: Sony</small>
-              <p class="text-danger">New</p>
-              <p>From: USA</p>
-            </div>
-            <div class="product-price d-flex justify-content-between">
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn rounded-0"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="far fa-plus-square"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Add to Collection</a>
-                  </li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">More Details</a></li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-              >
-                $499.00
-              </button>
-            </div>
-          </div>
-
-          <div class="card bg-light d-flex shadow">
-            <img
-              class="prod-img"
-              src="https://cdn.vox-cdn.com/thumbor/WX0Mp2YVGT6hRHzQdhYj-lBOF-k=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18958330/SonosBT.jpg"
-              alt="bt-speaker"
-            />
-
-            <div class="product-details p-2">
-              <h3 class="helvetica-bold font-weght-bold fs-1">
-                Bluetooth Speaker One
-              </h3>
-              <small>Brand: Sony</small>
-              <p class="text-danger">New</p>
-              <p>From: USA</p>
-            </div>
-            <div class="product-price d-flex justify-content-between">
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn rounded-0"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="far fa-plus-square"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Add to Collection</a>
-                  </li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
-                  <li><hr class="dropdown-divider border-danger" /></li>
-                  <li><a class="dropdown-item" href="#">More Details</a></li>
-                </ul>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-light rounded-0 btn-price text-danger"
-              >
-                $499.00
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="footer-top-container">
-        <div class="footer-top d-flex my-4">
-          <div class="about d-flex flex-column container-fluid">
-            <div class="about-header">
-              <h4 class="font-wight-bold fs-4 text-secondary">Electo Shop</h4>
-            </div>
-            <div class="about-caption">
-              <p class="">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Laboriosam, Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Laboriosam,
+    <!-- Main Storefront Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Main Hero Showcase Banner -->
+            <div class="hero-main-card">
+              <span class="hero-tag"><i class="fas fa-star mr-1"></i> Flagship Release 2026</span>
+              <h1 class="hero-title">MacBook Pro 16" with M3 Max Silicon</h1>
+              <p class="hero-subtitle">
+                Engineered for extreme performance with up to 16-core CPU, 40-core GPU, Liquid Retina XDR display, and 22 hours of battery power.
               </p>
-            </div>
-          </div>
-          <div
-            class="categories-section container-fluid border border-dark shadow"
-          >
-            <div class="categories-about">
-              <div class="navigation-header p-2">
-                <h4 class="fs-4">Categories</h4>
+              <div class="hero-price-wrap">
+                <span class="hero-price-label">Starting at</span>
+                <span class="hero-price-val">$3,499.00</span>
+                <span class="hero-price-old">$3,899.00</span>
               </div>
-              <div class="navigation-media d-flex flex-column p-2">
-                <a href="#" class="p-2 footer-top-heading"
-                  ><i class="fas fa-th-large footer-top-icons"> Speakers</i></a
-                >
-                <a href="#" class="p-2 footer-top-heading"
-                  ><i class="fas fa-th-large footer-top-icons"> TV</i></a
-                >
-                <a href="#" class="p-2 footer-top-heading"
-                  ><i class="fas fa-th-large footer-top-icons">
-                    Accessories</i
-                  ></a
-                >
+              <div class="hero-cta-group">
+                <a href="search.html?q=MacBook" class="btn btn-danger btn-lg px-4 font-weight-bold" style="border-radius: var(--radius-md);">
+                  <i class="fas fa-shopping-bag mr-2"></i> Shop Now
+                </a>
+                <button type="button" class="btn btn-outline-light btn-lg px-4" onclick="Store.openQuickView('prod-lap-01')">
+                  <i class="fas fa-info-circle mr-2"></i> Specs & Details
+                </button>
               </div>
             </div>
-            <div class="categories-navigation">
-              <div class="navigation-header p-2">
-                <h4 class="fs-4">Navigation</h4>
+
+            <!-- Side Banners -->
+            <div class="hero-side-grid">
+              <div class="hero-mini-banner">
+                <div>
+                  <span class="hero-mini-badge">Pro Noise Cancelling</span>
+                  <h3 class="hero-mini-title">Sony WH-1000XM5</h3>
+                  <div class="hero-mini-price">$348.00 <s class="text-muted small">$399.99</s></div>
+                  <a href="search.html?cat=audio" class="btn btn-sm btn-outline-dark font-weight-bold">Explore Audio <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+                <div class="hero-mini-img">
+                  <i class="fas fa-headphones-alt fa-4x text-danger"></i>
+                </div>
               </div>
-              <div class="navigation-media d-flex flex-column p-2">
-                <a href="#" class="p-2 footer-top-heading"
-                  ><i class="fas fa-home footer-top-icons"></i> Home</a
-                >
-                <a href="#" class="p-2 footer-top-heading"
-                  ><i class="fas fa-th-large footer-top-icons"></i>
-                  Collections</a
-                >
-                <a href="#" class="p-2 footer-top-heading"
-                  ><i class="fas fa-cart-plus footer-top-icons"></i> Purchase
-                  list</a
-                >
+
+              <div class="hero-mini-banner">
+                <div>
+                  <span class="hero-mini-badge">Next-Gen Gaming</span>
+                  <h3 class="hero-mini-title">PlayStation 5 Pro</h3>
+                  <div class="hero-mini-price">$699.99 <span class="badge badge-success">In Stock</span></div>
+                  <a href="search.html?cat=gaming" class="btn btn-sm btn-outline-dark font-weight-bold">View Console <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+                <div class="hero-mini-img">
+                  <i class="fas fa-gamepad fa-4x text-primary"></i>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Value Propositions Bar -->
+      <section class="container">
+        <div class="features-bar">
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon-box"><i class="fas fa-shipping-fast"></i></div>
+              <div>
+                <div class="feature-title">Free Express Shipping</div>
+                <div class="feature-sub">On all orders exceeding $150</div>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon-box"><i class="fas fa-shield-alt"></i></div>
+              <div>
+                <div class="feature-title">2-Year Official Warranty</div>
+                <div class="feature-sub">100% certified authentic products</div>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon-box"><i class="fas fa-undo-alt"></i></div>
+              <div>
+                <div class="feature-title">30-Day Return Guarantee</div>
+                <div class="feature-sub">Hassle-free money back guarantee</div>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon-box"><i class="fas fa-headset"></i></div>
+              <div>
+                <div class="feature-title">24/7 Expert Tech Support</div>
+                <div class="feature-sub">Direct access to tech specialists</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category Shortcut Strip -->
+      <section class="container category-strip-section">
+        <div class="section-header-flex">
+          <div>
+            <h2 class="section-title">Explore by Category</h2>
+            <p class="section-subtitle">Browse through our specialized electronics departments</p>
+          </div>
+          <a href="search.html" class="view-all-link">Browse Full Catalog <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="categories-carousel-grid">
+          <div class="category-tile-card" onclick="window.location.href='search.html?cat=laptops'">
+            <div class="category-tile-icon"><i class="fas fa-laptop"></i></div>
+            <div class="category-tile-name">Laptops</div>
+            <div class="category-tile-count">5 Items</div>
+          </div>
+          <div class="category-tile-card" onclick="window.location.href='search.html?cat=smartphones'">
+            <div class="category-tile-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="category-tile-name">Smartphones</div>
+            <div class="category-tile-count">4 Items</div>
+          </div>
+          <div class="category-tile-card" onclick="window.location.href='search.html?cat=audio'">
+            <div class="category-tile-icon"><i class="fas fa-headphones-alt"></i></div>
+            <div class="category-tile-name">Audio & Sound</div>
+            <div class="category-tile-count">4 Items</div>
+          </div>
+          <div class="category-tile-card" onclick="window.location.href='search.html?cat=gaming'">
+            <div class="category-tile-icon"><i class="fas fa-gamepad"></i></div>
+            <div class="category-tile-name">Gaming</div>
+            <div class="category-tile-count">4 Items</div>
+          </div>
+          <div class="category-tile-card" onclick="window.location.href='search.html?cat=wearables'">
+            <div class="category-tile-icon"><i class="fas fa-clock"></i></div>
+            <div class="category-tile-name">Wearables</div>
+            <div class="category-tile-count">3 Items</div>
+          </div>
+          <div class="category-tile-card" onclick="window.location.href='search.html?cat=cameras'">
+            <div class="category-tile-icon"><i class="fas fa-camera"></i></div>
+            <div class="category-tile-name">Cameras & Drones</div>
+            <div class="category-tile-count">2 Items</div>
+          </div>
+          <div class="category-tile-card" onclick="window.location.href='search.html?cat=accessories'">
+            <div class="category-tile-icon"><i class="fas fa-bolt"></i></div>
+            <div class="category-tile-name">Accessories</div>
+            <div class="category-tile-count">2 Items</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flash Deals Section with Countdown -->
+      <section class="container">
+        <div class="deals-section">
+          <div class="deals-header">
+            <div class="deals-title-wrap">
+              <h2><i class="fas fa-bolt text-danger"></i> Today's Flash Tech Deals</h2>
+              <p class="text-muted mb-0">Limited time seasonal price drops with instant express delivery</p>
+            </div>
+            <div class="deals-timer-wrap">
+              <span class="font-weight-bold mr-2"><i class="far fa-clock"></i> Ends In:</span>
+              <div class="timer-box">
+                <span class="timer-val" id="dealHours">18</span>
+                <span class="timer-unit">Hours</span>
+              </div>
+              <span class="font-weight-bold">:</span>
+              <div class="timer-box">
+                <span class="timer-val" id="dealMins">42</span>
+                <span class="timer-unit">Mins</span>
+              </div>
+              <span class="font-weight-bold">:</span>
+              <div class="timer-box">
+                <span class="timer-val" id="dealSecs">15</span>
+                <span class="timer-unit">Secs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flash Deals Grid -->
+          <div id="flashDealsGrid" class="product-grid"></div>
+        </div>
+      </section>
+
+      <!-- Featured Products & Interactive Tab Filter -->
+      <section class="container mb-5">
+        <div class="section-header-flex">
+          <div>
+            <h2 class="section-title">Trending Electronics</h2>
+            <p class="section-subtitle">Top curated gear recommended by our tech specialists</p>
+          </div>
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-sm btn-outline-dark cat-filter-btn active mr-1" data-cat="all">All</button>
+            <button type="button" class="btn btn-sm btn-outline-dark cat-filter-btn mr-1" data-cat="laptops">Laptops</button>
+            <button type="button" class="btn btn-sm btn-outline-dark cat-filter-btn mr-1" data-cat="smartphones">Phones</button>
+            <button type="button" class="btn btn-sm btn-outline-dark cat-filter-btn mr-1" data-cat="audio">Audio</button>
+            <button type="button" class="btn btn-sm btn-outline-dark cat-filter-btn mr-1" data-cat="gaming">Gaming</button>
+            <button type="button" class="btn btn-sm btn-outline-dark cat-filter-btn" data-cat="wearables">Wearables</button>
+          </div>
+        </div>
+
+        <div id="featuredProductsGrid" class="product-grid"></div>
+      </section>
+
+      <!-- Dual Promotional Split Banners -->
+      <section class="container">
+        <div class="promo-banners-grid">
+          <div class="promo-banner promo-banner-1">
+            <span class="badge badge-danger mb-3 align-self-start font-weight-bold">PRO ESPORTS SETUP</span>
+            <h3>Build Your Ultimate Gaming Battlestation</h3>
+            <p>Experience ultra-high refresh rates, QD-OLED perfection, and sub-millisecond wireless peripherals.</p>
+            <a href="search.html?cat=gaming" class="btn btn-light font-weight-bold align-self-start">
+              Explore Gaming Gear <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+          <div class="promo-banner promo-banner-2">
+            <span class="badge badge-warning mb-3 align-self-start font-weight-bold">SPATIAL IMMERSION</span>
+            <h3>Audiophile Sound & Hybrid Active NC</h3>
+            <p>Lossless Bluetooth streaming, custom acoustic drivers, and all-day ergonomic comfort.</p>
+            <a href="search.html?cat=audio" class="btn btn-light font-weight-bold align-self-start">
+              Discover Audio <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Sellers Grid -->
+      <section class="container mb-5">
+        <div class="section-header-flex">
+          <div>
+            <h2 class="section-title">Customer Favorites & Top Rated</h2>
+            <p class="section-subtitle">Consistently 4.8+ star rated products with verified buyer reviews</p>
+          </div>
+          <a href="search.html?sort=rating" class="view-all-link">View Top Rated <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div id="bestSellersGrid" class="product-grid"></div>
+      </section>
     </main>
 
-    <footer
-      class="d-flex flex-column bg-dark justify-content-center align-items-center pt-4"
-    >
-      <div class="d-flex flex-column align-items-center">
-        <a href=""><img src="Images/zattix-logo.png" alt="" /></a>
-        <a href="">Electro Shop</a>
+    <!-- Slide-Out Cart Drawer -->
+    <div id="cartOverlay" class="cart-overlay" onclick="Store.closeCartDrawer()"></div>
+    <div id="cartDrawer" class="cart-drawer">
+      <div class="cart-drawer-header">
+        <div class="cart-drawer-title">
+          <i class="fas fa-shopping-bag text-danger"></i> Shopping Cart
+        </div>
+        <button type="button" class="cart-drawer-close" onclick="Store.closeCartDrawer()">&times;</button>
       </div>
 
-      <div class="d-flex flex-row justify-content-center flex-wrap">
-        <a href="" class="footer-icons text-white"
-          ><i class="fab fa-facebook-f text-white"></i> Facebook</a
-        >
-        <a href="" class="footer-icons text-white"
-          ><i class="fab fa-instagram text-white"></i> Instagram</a
-        >
-        <a href="" class="footer-icons text-white"
-          ><i class="fab fa-twitter text-white"></i> Twitter</a
-        >
+      <!-- Free Shipping Meter -->
+      <div class="shipping-meter-wrap">
+        <div id="shippingProgressMsg" class="shipping-meter-msg">
+          Add <strong>$150.00</strong> more for <strong>FREE Express Shipping</strong>
+        </div>
+        <div class="shipping-progress-track">
+          <div id="shippingProgressBar" class="shipping-progress-fill"></div>
+        </div>
       </div>
 
-      <p class="p-2 text-white">Copyright &copy; 2021</p>
+      <!-- Cart Items List -->
+      <div id="cartDrawerItems" class="cart-drawer-items"></div>
+
+      <!-- Cart Drawer Footer -->
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotalVal">$0.00</span>
+        </div>
+        <button type="button" class="checkout-btn" onclick="alert('Proceeding to secure checkout...');">
+          <i class="fas fa-lock"></i> Proceed to Checkout
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal fade" id="quickViewModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title font-weight-bold" id="qvModalTitle">Product Details</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="qv-grid">
+              <div class="qv-image-box">
+                <img id="qvModalImage" src="" alt="Product Preview" style="max-height: 280px; object-fit: contain;" />
+              </div>
+              <div>
+                <span id="qvModalCategory" class="badge badge-secondary mb-2">Category</span>
+                <div class="d-flex align-items-baseline gap-2 mb-2">
+                  <span id="qvModalPrice" class="h3 font-weight-bold text-danger mb-0 mr-2">$0.00</span>
+                  <span id="qvModalOldPrice" class="text-muted text-decoration-line-through"></span>
+                </div>
+                <div id="qvModalRating" class="mb-3"></div>
+                <p id="qvModalDesc" class="text-muted small mb-3"></p>
+                <ul id="qvModalSpecs" class="qv-specs-list"></ul>
+                <div class="d-flex align-items-center gap-3 mt-4">
+                  <input type="number" id="qvModalQty" class="form-control" value="1" min="1" max="10" style="width: 80px;" />
+                  <button type="button" id="qvModalAddCart" class="btn btn-danger flex-grow-1 font-weight-bold py-2">
+                    <i class="fas fa-shopping-cart mr-2"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-top-grid">
+          <div>
+            <div class="brand-logo mb-3">
+              <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+              <span>ELECTRO</span>SHOP
+            </div>
+            <p class="small text-muted mb-4">
+              Your premier destination for high-performance computing, smartphones, immersive audio, and next-generation consumer electronics.
+            </p>
+            <div class="d-flex gap-3 text-muted">
+              <a href="#" class="text-white mr-3"><i class="fab fa-twitter fa-lg"></i></a>
+              <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+              <a href="#" class="text-white mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-github fa-lg"></i></a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Categories</h4>
+            <ul class="footer-links">
+              <li><a href="search.html?cat=laptops">Laptops & Computers</a></li>
+              <li><a href="search.html?cat=smartphones">Smartphones & Tablets</a></li>
+              <li><a href="search.html?cat=audio">Audio & Headphones</a></li>
+              <li><a href="search.html?cat=gaming">Gaming & Esports</a></li>
+              <li><a href="search.html?cat=wearables">Smart Wearables</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Customer Care</h4>
+            <ul class="footer-links">
+              <li><a href="webpages/login.html">My Account</a></li>
+              <li><a href="search.html">Track Order</a></li>
+              <li><a href="search.html">Shipping & Delivery</a></li>
+              <li><a href="search.html">Warranty & Returns</a></li>
+              <li><a href="webpages/Dashboard.html">Admin Portal</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">VIP Newsletter</h4>
+            <p class="small text-muted mb-2">Subscribe to get secret discounts, early access to new releases, and weekly tech deals.</p>
+            <form id="newsletterForm" class="newsletter-form">
+              <input type="email" class="newsletter-input" placeholder="Your email address" required />
+              <button type="submit" class="newsletter-btn">Join</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>&copy; 2026 Electro Shop Inc. All rights reserved.</div>
+          <div class="d-flex align-items-center gap-3">
+            <span class="mr-3"><i class="fab fa-cc-visa fa-2x"></i></span>
+            <span class="mr-3"><i class="fab fa-cc-mastercard fa-2x"></i></span>
+            <span class="mr-3"><i class="fab fa-cc-apple-pay fa-2x"></i></span>
+            <span><i class="fab fa-cc-paypal fa-2x"></i></span>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- Core Scripts (jQuery, Popper, Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Application Modules -->
+    <script src="js/data.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

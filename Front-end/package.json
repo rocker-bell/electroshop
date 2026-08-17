@@ -4,7 +4,6 @@
   "description": "## style command  npx stylelint \"**/*.{css,scss}\"",
   "main": "index.js",
   "devDependencies": {
-    
     "hint": "6.0.x",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
@@ -26,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/MkrtichSargsyan/linters-config/issues"
   },
-  "homepage": "https://github.com/MkrtichSargsyan/linters-config#readme"
+  "homepage": "https://github.com/MkrtichSargsyan/linters-config#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
 }
